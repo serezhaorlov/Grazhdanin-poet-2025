@@ -5,8 +5,8 @@
     cursor: pointer;
     border: none;
     background-repeat: no-repeat;
-    background-color: white;
-    margin: 0 45px 0 160px;
+    background-color: transparent;
+    margin: -12px 45px 0 160px;
 }
 
 .card__bookmark:hover {

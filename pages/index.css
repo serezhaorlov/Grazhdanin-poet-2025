@@ -22,6 +22,9 @@
 /*Initiatives + card*/
 @import url("../blocks/initiatives/initiatives.css"); /**/
 @import url("../blocks/initiatives/__popular/initiatives__popular.css");/**/
+@import url("../blocks/initiatives/__container/initiatives__container.css");/**/
+@import url("../blocks/initiatives/__see-all-cards/initiatives__see-all-cards.css");/*card__see-all-cards*/
+@import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css");/*card__see-all-button*/
 @import url("../blocks/card/card.css");/*card*/
 @import url("../blocks/card/__container/card__container.css");/*card__container*/
 @import url("../blocks/card/__heading/card__heading.css");/*card__heading*/
@@ -30,11 +33,10 @@
 @import url("../blocks/card/__theme/card__theme.css");/*card__theme*/
 @import url("../blocks/card/__main-text/card__main-text.css");/*card__main-text*/
 @import url("../blocks/card/__author/card__author.css");/*card__author*/
-@import url("../blocks/initiatives/__container/initiatives__container.css");/**/
-@import url("../blocks/initiatives/__see-all-cards/initiatives__see-all-cards.css");/*card__see-all-cards*/
-@import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css");/*card__see-all-button*/
 @import url("../blocks/card/__main-text/_news/card__main-text_news.css");
 @import url("../blocks/card/_news/card_news.css");
+
+
 
 /*News + card*/
 @import url("../blocks/news/news.css");
