@@ -1,0 +1,7 @@
+.promo__container{
+    display: flex;
+    flex-direction: column;
+    width: 576;
+    align-items: center;
+    background-color: rgba(196, 196, 196, 1)
+}

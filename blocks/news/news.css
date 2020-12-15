@@ -1,0 +1,9 @@
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-template-columns: repeat(auto-fit, 360px);
+    gap: 24px;
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 76px;
+}

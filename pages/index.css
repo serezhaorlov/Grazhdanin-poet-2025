@@ -19,7 +19,7 @@
 @import url("../blocks/front-window/__create-button/front-window__create-button.css");
 
 
-/*Initiatives + initiative*/
+/*Initiatives + card*/
 @import url("../blocks/initiatives/initiatives.css"); /**/
 @import url("../blocks/initiatives/__popular/initiatives__popular.css");/**/
 @import url("../blocks/card/card.css");/*card*/
@@ -32,4 +32,21 @@
 @import url("../blocks/card/__author/card__author.css");/*card__author*/
 @import url("../blocks/initiatives/__container/initiatives__container.css");/**/
 @import url("../blocks/initiatives/__see-all-cards/initiatives__see-all-cards.css");/*card__see-all-cards*/
-@import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css")/*card__see-all-button*/
+@import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css");/*card__see-all-button*/
+@import url("../blocks/card/__main-text/_news/card__main-text_news.css");
+@import url("../blocks/card/_news/card_news.css");
+
+/*News + card*/
+@import url("../blocks/news/news.css");
+@import url("../blocks/news/__container/news__container.css");
+@import url("../blocks/news/__popular/news__popular.css");
+@import url("../blocks/news/__see-all-cards/news__see-all-cards.css");
+@import url("../blocks/news/__see-all-button/news__see-all-button.css");
+
+
+@import url("../blocks/promo/promo.css");
+@import url("../blocks/promo/__container/promo__container.css");
+@import url("../blocks/promo/__heading/promo__heading.css");
+@import url("../blocks/promo/__subheading/promo__subheading.css");
+@import url("../blocks/promo/__button/promo__button.css");
+@import url("../blocks/promo/__img/promo__img.css");
