@@ -1,5 +1,6 @@
 .promo{
     display: flex;
     justify-content: center;
-    padding-top: 128px;
+    width: 94%;
+    padding:128px 0 0 72px;
 }
