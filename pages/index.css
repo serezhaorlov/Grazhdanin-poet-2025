@@ -8,3 +8,10 @@
 @import url("../blocks/header/__profile-container/header__profile-container.css");
 @import url("../blocks/header/__profile-title/header__profile-title.css");
 @import url("../blocks/header/__avatar/header__avatar.css");
+
+
+@import url("../blocks/front-window/front-window.css");
+@import url("../blocks/front-window/__title/front-window__title.css");
+@import url("../blocks/front-window/__text-container/front-window__text-container.css");
+@import url("../blocks/front-window/__subtitle/front-window__subtitle.css");
+@import url("../blocks/front-window/__create-button/front-window__create-button.css");
