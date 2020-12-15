@@ -1,0 +1,10 @@
+.initiative__bookmark{
+    background-image: url(../../../images/bookmark-initiative.svg); /*отображение не то немного, но не страшно вроде*/
+    padding: 28px;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 0 45px 0 160px;
+}

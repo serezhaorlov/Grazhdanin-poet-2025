@@ -1,5 +1,6 @@
 @import url("../blocks/page/page.css");
 
+/*Header*/
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__link-list/header__link-list.css");
@@ -10,8 +11,22 @@
 @import url("../blocks/header/__avatar/header__avatar.css");
 
 
+/*Front-window*/
 @import url("../blocks/front-window/front-window.css");
 @import url("../blocks/front-window/__title/front-window__title.css");
 @import url("../blocks/front-window/__text-container/front-window__text-container.css");
 @import url("../blocks/front-window/__subtitle/front-window__subtitle.css");
 @import url("../blocks/front-window/__create-button/front-window__create-button.css");
+
+
+/*Initiatives + initiative*/
+@import url("../blocks/initiatives/initiatives.css");
+@import url("../blocks/initiatives/__popular/initiatives__popular.css");
+@import url("../blocks/initiative/initiative.css");
+@import url("../blocks/initiative/__container/initiative__container.css");
+@import url("../blocks/initiative/__heading/initiative__heading.css");
+@import url("../blocks/initiative/__bookmark/initiative__bookmark.css");
+@import url("../blocks/initiative/__date/initiative__date.css");
+@import url("../blocks/initiative/__theme/initiative__theme.css");
+@import url("../blocks/initiative/__main-text/initiative__main-text.css");
+@import url("../blocks/initiative/__author/initiative__author.css");

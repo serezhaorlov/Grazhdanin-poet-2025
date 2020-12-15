@@ -1,0 +1,12 @@
+.initiative__main-text{
+    padding: 24px 0 0 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    width: 80%;
+    word-break: break-all;
+    margin: 0;
+}
