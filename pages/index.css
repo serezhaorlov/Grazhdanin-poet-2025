@@ -52,3 +52,19 @@
 @import url("../blocks/promo/__subheading/promo__subheading.css");
 @import url("../blocks/promo/__button/promo__button.css");
 @import url("../blocks/promo/__img/promo__img.css");
+
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__column/footer__column.css");
+@import url("../blocks/footer/__column/_content/footer__column_content_logo.css");
+@import url("../blocks/footer/__column/_content/footer__column_content_about.css");
+@import url("../blocks/footer/__column/_content/footer__column_content_subscribe.css");
+@import url("../blocks/footer/__link/footer__link.css");
+@import url("../blocks/footer/__link/_logo/footer__link_logo_instagram.css");
+@import url("../blocks/footer/__link/_logo/footer__link_logo_telegram.css");
+@import url("../blocks/footer/__link/_logo/footer__link_logo_twitter.css");
+@import url("../blocks/footer/__link/_logo/footer__link_logo_vk.css");
+@import url("../blocks/footer/__nav/footer__nav.css");
+@import url("../blocks/footer/__heading/footer__heading.css");
+@import url("../blocks/footer/__paragraph/footer__paragraph.css");
+@import url("../blocks/footer/__subscribe-button/footer__subscribe-button.css");
+@import url("../blocks/footer/__input-email/footer__input-email.css");
