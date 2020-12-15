@@ -1,6 +1,6 @@
 .card__bookmark{
     background-image: url(../../../images/bookmark-initiative.svg); /*отображение не то немного, но не страшно вроде*/
-    padding: 28px;
+    padding: 17px;
     background-position: center;
     cursor: pointer;
     border: none;
