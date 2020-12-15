@@ -1,9 +1,0 @@
-.initiatives__container{
-    display: flex;
-    border: 1px solid red;
-    grid-column-start: 3;
-    grid-column-end: 2;
-    width: 20%
-}
-
-

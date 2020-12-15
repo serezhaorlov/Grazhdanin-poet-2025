@@ -1,4 +1,4 @@
-.initiative__see-all-button{
+.initiatives__see-all-button{
     background-image: url(../../../images/see-all-button.svg); /*отображение не то немного, но не страшно вроде*/
     padding: 16px;
     background-position: center;
@@ -8,6 +8,6 @@
     background-color: white;
 }
 
-.initiative__see-all-button:hover{
+.initiatives__see-all-button:hover{
     opacity: 0.8;
 }

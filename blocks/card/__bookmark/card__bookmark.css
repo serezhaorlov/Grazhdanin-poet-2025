@@ -1,4 +1,4 @@
-.initiative__bookmark{
+.card__bookmark{
     background-image: url(../../../images/bookmark-initiative.svg); /*отображение не то немного, но не страшно вроде*/
     padding: 28px;
     background-position: center;
@@ -9,6 +9,6 @@
     margin: 0 45px 0 160px;
 }
 
-.initiative__bookmark:hover {
+.card__bookmark:hover {
     opacity: 0.6;
 }

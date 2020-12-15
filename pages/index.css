@@ -20,16 +20,16 @@
 
 
 /*Initiatives + initiative*/
-@import url("../blocks/initiatives/initiatives.css");
-@import url("../blocks/initiatives/__popular/initiatives__popular.css");
-@import url("../blocks/initiative/initiative.css");
-@import url("../blocks/initiative/__container/initiative__container.css");
-@import url("../blocks/initiative/__heading/initiative__heading.css");
-@import url("../blocks/initiative/__bookmark/initiative__bookmark.css");
-@import url("../blocks/initiative/__date/initiative__date.css");
-@import url("../blocks/initiative/__theme/initiative__theme.css");
-@import url("../blocks/initiative/__main-text/initiative__main-text.css");
-@import url("../blocks/initiative/__author/initiative__author.css");
-@import url("../blocks/initiatives/__container/initiatives__container.css");
-@import url("../blocks/initiative/__see-all-cards/initiative__see-all-cards.css");
-@import url("../blocks/initiative/__see-all-button/initiative__see-all-button.css")
+@import url("../blocks/initiatives/initiatives.css"); /**/
+@import url("../blocks/initiatives/__popular/initiatives__popular.css");/**/
+@import url("../blocks/card/card.css");/*card*/
+@import url("../blocks/card/__container/card__container.css");/*card__container*/
+@import url("../blocks/card/__heading/card__heading.css");/*card__heading*/
+@import url("../blocks/card/__bookmark/card__bookmark.css");/*card__bookmark*/
+@import url("../blocks/card/__date/card__date.css");/*card__date*/
+@import url("../blocks/card/__theme/card__theme.css");/*card__theme*/
+@import url("../blocks/card/__main-text/card__main-text.css");/*card__main-text*/
+@import url("../blocks/card/__author/card__author.css");/*card__author*/
+@import url("../blocks/initiatives/__container/initiatives__container.css");/**/
+@import url("../blocks/initiatives/__see-all-cards/initiatives__see-all-cards.css");/*card__see-all-cards*/
+@import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css")/*card__see-all-button*/
