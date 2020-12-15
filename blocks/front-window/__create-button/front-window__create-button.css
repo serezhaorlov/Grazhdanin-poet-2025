@@ -1,7 +1,9 @@
 .front-window__create-button{
-    width: 240px;
-    height: 40px;
-    margin: 130px 77px 64px 0;
+    width: 320px;
+    height: 72px;
+    margin: 98px 77px 64px 0;
+    border-radius: 8px;
+    padding: 0;
     align-self: flex-end;
     text-align: center;
     background-color: #7d7d7d;
