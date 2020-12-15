@@ -1,9 +1,7 @@
 .front-window__create-button{
     width: 240px;
     height: 40px;
-    margin-top: 130px;
-    margin-right: 77px;
-    margin-bottom: 64px;
+    margin: 130px 77px 64px 0;
     align-self: flex-end;
     text-align: center;
     background-color: #7d7d7d;
@@ -12,9 +10,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    
     color: #C4C4C4;
-
 }
 
 .front-window__create-button:hover{
