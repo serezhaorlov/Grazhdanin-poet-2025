@@ -1,6 +1,7 @@
 .initiative{
     width: 552px;
-    height: 276px;
-    background-image: url(../../images/background-front-window.jpg);
+    min-height: 276px;
+    background-color: rgba(196, 196, 196, 1);
     background-position: center;
+    padding-left: 32px;
 }

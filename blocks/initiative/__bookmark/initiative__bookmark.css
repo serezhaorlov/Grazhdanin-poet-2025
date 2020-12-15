@@ -8,3 +8,7 @@
     background-color: white;
     margin: 0 45px 0 160px;
 }
+
+.initiative__bookmark:hover {
+    opacity: 0.6;
+}
