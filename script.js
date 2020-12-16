@@ -61,4 +61,4 @@ makeInitiativeButton.addEventListener('click', () => open(popupMakeInitiative));
 subscribeButton.addEventListener('click', () =>open(popupSubscribed));
 regButton.addEventListener('click', () => open(popupUser));
 bookmsrkButton.addEventListener('click', () => open(popupEnter));
-seeAllButton.addEventListener('click', () => open(popupReg));
+seeAllButton.addEventListener('click', () => open(popupReg)); 
