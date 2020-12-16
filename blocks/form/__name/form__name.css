@@ -1,0 +1,11 @@
+.form__name {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 320px;
+  min-height: 56px;
+  margin: 30px 36px 0;
+  font-family: roboto;
+  padding-left: 24px;
+}
+
+

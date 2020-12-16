@@ -129,6 +129,89 @@
                 <img src="" class="promo__img">
             </section>
         </main>
+        <section class="popup  popup_is-opened">
+          <form class="form">
+            <h2 class="form__heading">Вход в личный кабинет</h2>
+            <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="Логин" class="form__name form__name_login">
+            <span id="text-error" class="form__error"></span>
+            <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
+            <span id="password-error" class="form__error"></span>
+            <a href="#" class="form__link">Забыли логин или пароль?</a>
+            <div class="form__container">
+                <input type="checkbox" required="" id="checkbox" name="checkbox" value="" placeholder="" class="form__checkbox"></input>
+                <label for="checkbox" class="form___label">Чужой компьютер</label>
+            </div>
+            <button type="submit" id="submit-button" value="Сохранить" class="form__button">Войти</button>
+            <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg form__button_unactive">Зарегистрироваться</button>
+            <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
+            <button id="button-close" type="button" class="form__close-button"></button>
+          </form>  
+        </section>
+        <section class="popup-reg ">
+            <form class="form">
+              <h2 class="form__heading form__heading_reg">Регистрация</h2>
+              <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="ФИО" class="form__name form__name_login">
+              <span id="text-error" class="form__error"></span>
+              <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
+              <span id="password-error" class="form__error"></span>
+              <input type="tel" required="" minlength="2" maxlength="40" id="tel" name="tel" value="" placeholder="Телефон" class="form__name form__name_tel">
+              <span id="tel-error" class="form__error"></span>
+              <p class="form__text">Нажимая кнопку “Зарегистрироваться” вы
+                соглашаетесь с <a href="#" class="form__link form__link_reg">Условиями использования</a> и <a href="#" class="form__link form__link_reg">Политикой конфиденциальности</a>
+              </p>
+              <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg">Зарегистрироваться</button>
+              <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
+              <button id="button-close" type="button" class="form__close-button"></button>
+            </form>  
+          </section>
+          <section class="popup-initiative ">
+            <form class="form">
+              <h2 class="form__heading">Создние инициативы</h2>
+              <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="Название инициативы" class="form__name form__name_login">
+              <span id="name-error" class="form__error" ></span>
+              <select name="select" class="form__select" placeholder="Тема обращения"> <!--Supplement an id here instead of using 'name'-->
+                <option value="value1" class="form__option">Тема обращения</option>
+                <option value="value2" class="form__option">Значение 2</option>
+                <option value="value3" class="form__option">Значение 3</option>
+              </select>
+              <input type="text" required="" minlength="2" maxlength="999" id="text" name="text" value="" placeholder="Введите текст..." class="form__name form__name_text">
+              <span id="name-error" class="form__error"></span>
+              <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg">Создать инициативу</button>
+              <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
+              <button id="button-close" type="button" class="form__close-button"></button>
+            </form>  
+          </section>
+          <section class="popup-profile popup-profile_new-user ">
+            <div class="popup-profile__container">
+                <img class="popup-profile__user-pic popup-profile__user-pic_new-user">
+                <button class="popup-profile__button popup-profile__button_new-user">Выход</button>
+            </div>
+          </section>
+          <section class="popup-profile">
+            <div class="popup-profile__container">
+                <div class="popup-profile__user-container">
+                    <a href="#" class="popup-profile__user-name">Петр Петров</a>
+                    <button type="button" class="popup-profile__user-pic"></button>
+                </div>
+                <div class="popup-profile__saved-container">
+                    <a href="#" class="popup-profile__user-saved">Избранное</a>
+                    <button type="button" class="popup-profile__user-settings"></button>
+                </div>
+
+                <button type="button" class="popup-profile__button">Выход</button>
+            </div>
+
+        </section>
+        <section class="popup-subscribe">
+            <div class="popup-subscribe__container">
+            <h4 class="popup-subscribe__title">Подписка оформлена!</h4>
+            <p class="popup-subscribe__subtitle">Вы успешно подписались на нашу рассылку, теперь вы будете получать новости о нашей компании и о самых популярных инициативах!</p>
+            <button id="button-close" type="button" class="popup-subscribe__close-button"></button>
+        </section>
+
+
+
+
 
         <footer class="footer">
             <div class="footer__column footer__column_content_logo">

@@ -1,0 +1,14 @@
+.popup-profile__user-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #7D7D7D;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.popup-profile__user-name:hover{
+    opacity: 0.8;
+}
