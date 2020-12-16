@@ -76,6 +76,18 @@
 @import url("../blocks/popup-profile/__button/popup-profile__button.css");
 @import url("../blocks/popup-profile/__button/_new-user/popup-profile__button_new-user.css");
 
+@import url("../blocks/popup-profile-full/popup-profile-full.css");
+@import url("../blocks/popup-profile-full/__container/popup-profile-full__container.css");
+@import url("../blocks/popup-profile-full/__user-container/popup-profile-full__user-container.css");
+@import url("../blocks/popup-profile-full/__saved-container/popup-profile-full__saved-container.css");
+@import url("../blocks/popup-profile-full/__user-name/popup-profile-full__user-name.css");
+@import url("../blocks/popup-profile-full/__user-pic/popup-profile-full__user-pic.css");
+@import url("../blocks/popup-profile-full/__user-pic/_new-user/popup-profile-full__user-pic_new-user.css");
+@import url("../blocks/popup-profile-full/__user-settings/popup-profile-full__user-settings.css");
+@import url("../blocks/popup-profile-full/__user-saved/popup-profile-full__user-saved.css");
+@import url("../blocks/popup-profile-full/__button/popup-profile-full__button.css");
+@import url("../blocks/popup-profile-full/__button/_new-user/popup-profile-full__button_new-user.css");
+
 
 /*footer*/
 @import url("../blocks/footer/footer.css");

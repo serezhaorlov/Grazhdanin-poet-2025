@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./pages/index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <!-- <script src="./script.js" defer></script> -->
+        <script src="./script.js" defer></script>
         <title>Hacaton</title>
     </head>
     <body class="page">
@@ -129,7 +129,7 @@
                 <img src="" class="promo__img">
             </section>
         </main>
-        <section class="popup  popup_is-opened">
+        <section class="popup">
           <form class="form">
             <h2 class="form__heading">Вход в личный кабинет</h2>
             <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="Логин" class="form__name form__name_login">
@@ -187,18 +187,18 @@
                 <button class="popup-profile__button popup-profile__button_new-user">Вход</button>
             </div>
           </section>
-          <section class="popup-profile">
-            <div class="popup-profile__container">
-                <div class="popup-profile__user-container">
-                    <a href="#" class="popup-profile__user-name">Петр Петров</a>
-                    <button type="button" class="popup-profile__user-pic"></button>
+          <section class="popup-profile-full"> <!--переделать-->
+            <div class="popup-profile-full__container">
+                <div class="popup-profile-full__user-container">
+                    <a href="#" class="popup-profile-full__user-name">Петр Петров</a>
+                    <button type="button" class="popup-profile-full__user-pic"></button>
                 </div>
-                <div class="popup-profile__saved-container">
-                    <a href="#" class="popup-profile__user-saved">Избранное</a>
-                    <button type="button" class="popup-profile__user-settings"></button>
+                <div class="popup-profile-full__saved-container">
+                    <a href="#" class="popup-profile-full__user-saved">Избранное</a>
+                    <button type="button" class="popup-profile-full__user-settings"></button>
                 </div>
 
-                <button type="button" class="popup-profile__button">Выход</button>
+                <button type="button" class="popup-profile-full__button">Выход</button>
             </div>
 
         </section>

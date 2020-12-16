@@ -1,0 +1,11 @@
+.popup-profile-full__container{
+    width: 312px;
+    height: 264px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-self: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
