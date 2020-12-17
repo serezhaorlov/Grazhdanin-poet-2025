@@ -1,4 +1,4 @@
 .promo__img{
-    width: 600px;
+    min-width: 576px;
     background-color: darkgray;
 }
