@@ -1,6 +1,6 @@
 .footer__column_content_logo {
-    max-width: 170px;
-    max-height: 210px;
+    width: 170px;
+    height: 210px;
 
     display: flex;
     flex-direction: column;
