@@ -1,8 +1,8 @@
 @import url("../blocks/page/page.css");
 
 /*Header*/
+@import url("../blocks/logo/logo.css");
 @import url("../blocks/header/header.css");
-@import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__link-list/header__link-list.css");
 @import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/header/__input-search/header__input-search.css");
@@ -95,11 +95,15 @@
 @import url("../blocks/footer/__column/_content/footer__column_content_logo.css");
 @import url("../blocks/footer/__column/_content/footer__column_content_about.css");
 @import url("../blocks/footer/__column/_content/footer__column_content_subscribe.css");
+@import url("../blocks/footer/__social-links/footer__social-links.css");
+@import url("../blocks/footer/__title/footer__title.css");
+@import url("../blocks/footer/__logo-links/footer__logo-links.css");
 @import url("../blocks/footer/__link/footer__link.css");
-@import url("../blocks/footer/__link/_logo/footer__link_logo_instagram.css");
-@import url("../blocks/footer/__link/_logo/footer__link_logo_telegram.css");
-@import url("../blocks/footer/__link/_logo/footer__link_logo_twitter.css");
-@import url("../blocks/footer/__link/_logo/footer__link_logo_vk.css");
+@import url("../blocks/footer/__logo-link/footer__logo-link.css");
+@import url("../blocks/footer/__logo-link/_logo/footer__logo-link_instagram.css");
+@import url("../blocks/footer/__logo-link/_logo/footer__logo-link_telegram.css");
+@import url("../blocks/footer/__logo-link/_logo/footer__logo-link_twitter.css");
+@import url("../blocks/footer/__logo-link/_logo/footer__logo-link_vk.css");
 @import url("../blocks/footer/__nav/footer__nav.css");
 @import url("../blocks/footer/__heading/footer__heading.css");
 @import url("../blocks/footer/__paragraph/footer__paragraph.css");
