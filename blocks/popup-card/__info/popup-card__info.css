@@ -1,0 +1,7 @@
+.popup-card__info {
+    max-width: 448px;
+    max-height: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
