@@ -1,0 +1,7 @@
+.popup-card__header {
+    padding-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

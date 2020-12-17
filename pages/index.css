@@ -9,6 +9,7 @@
 @import url("../blocks/header/__profile-container/header__profile-container.css");
 @import url("../blocks/header/__profile-title/header__profile-title.css");
 @import url("../blocks/header/__avatar/header__avatar.css");
+@import url("../blocks/popup-card/__text/popup-card__text.css");
 
 
 /*Front-window*/
@@ -87,6 +88,36 @@
 @import url("../blocks/popup-profile-full/__user-saved/popup-profile-full__user-saved.css");
 @import url("../blocks/popup-profile-full/__button/popup-profile-full__button.css");
 @import url("../blocks/popup-profile-full/__button/_new-user/popup-profile-full__button_new-user.css");
+
+@import url("../blocks/popup-card/popup-card.css");
+@import url("../blocks/popup-card/__content/popup-card__content.css");
+
+@import url("../blocks/popup-card/__header/popup-card__header.css");
+@import url("../blocks/popup-card/__heading/popup-card__heading.css");
+@import url("../blocks/popup-card/__subheading/popup-card__sudheading.css");
+@import url("../blocks/popup-card/__user-info/popup-card__user-info.css");
+@import url("../blocks/popup-card/__info/popup-card__info.css");
+@import url("../blocks/popup-card/__avatar/popup-card__avatar.css");
+@import url("../blocks/popup-card/__author/popup-card__author.css");
+@import url("../blocks/popup-card/__date/popup-card__date.css");
+@import url("../blocks/popup-card/__like-info/popup-card__like-info.css");
+@import url("../blocks/popup-card/__share-container/popup-card__share-container.css");
+@import url("../blocks/popup-card/__share-button/popup-card__share-button.css");
+@import url("../blocks/popup-card/__bookmark/popup-card__bookmark.css");
+@import url("../blocks/popup-card/__like-counter/popup-card__like-counter.css");
+@import url("../blocks/popup-card/__replies-heading/popup-card__replies-heading.css");
+@import url("../blocks/popup-card/__replies-title/popup-card__replies-title.css");
+@import url("../blocks/popup-card/__show-replies-button/popup-card__show-replies-button.css");
+@import url("../blocks/popup-card/__replies-form/popup-card__replies-form.css");
+@import url("../blocks/popup-card/__reply-input/popup-card__reply-input.css");
+@import url("../blocks/popup-card/__reply-confirm/popup-card__reply-confirm.css");
+
+
+
+
+
+
+
 
 
 /*footer*/

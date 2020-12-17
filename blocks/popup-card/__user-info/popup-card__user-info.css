@@ -1,0 +1,6 @@
+.popup-card__user-info {
+    width: 552px;
+    max-height: 54px;
+
+    display: flex;
+}
