@@ -7,6 +7,7 @@ const profileButtonOpen = document.querySelector('.header__profile-title')
 const profileWholeBlock = document.querySelector('.header__profile-container')
 const createInitiativeButton = document.querySelector('.front-window__create-button')
 const cardText = document.querySelector('.card__main-text')
+const cardTitle = document.querySelector('.card__heading')
 
 
 const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
@@ -16,6 +17,7 @@ const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputd
 
 const popupInitiative = new PopUpWithForm ('.popup-initiative', {handleFormSubmit: (inputdata) => {
     console.log(inputdata)
+    cardTitle.textContent = inputdata.name
     cardText.textContent = inputdata.text
     popupInitiative.close()
 }})
