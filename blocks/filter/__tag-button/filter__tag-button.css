@@ -1,0 +1,21 @@
+.filter__tag-button {
+    height: 33px;
+
+    border: 1px solid #7D7D7D;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7D7D7D;
+
+    cursor: pointer;
+}
+
+.filter__tag-button:hover{
+    opacity: 0.6; /*можно до 0.8 по идее идти, будет ок*/
+    cursor: pointer;
+}

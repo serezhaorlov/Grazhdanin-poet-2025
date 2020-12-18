@@ -11,49 +11,32 @@
 @import url("../blocks/header/__profile-title/header__profile-title.css");
 @import url("../blocks/header/__avatar/header__avatar.css");
 
+@import url("../blocks/main/main.css");
+@import url("../blocks/main/_feed/main_feed.css");
 
+@import url("../blocks/filter/filter.css");
+@import url("../blocks/filter/__conteiner/filter__container.css");
+@import url("../blocks/filter/__select-city/filter__select-city.css");
+@import url("../blocks/filter/__paragraph/filter__paragraph.css");
+@import url("../blocks/filter/__sort/filter__sort.css");
+@import url("../blocks/filter/__city-button/filter__city-button.css");
+@import url("../blocks/filter/__show-sort/filter__show-sort.css");
+@import url("../blocks/filter/__tag-container/filter__tag-container.css");
+@import url("../blocks/filter/__tags/filter__tags.css");
+@import url("../blocks/filter/__tag-button/filter__tag-button.css");
 
-/*Front-window*/
-@import url("../blocks/front-window/front-window.css");
-@import url("../blocks/front-window/__title/front-window__title.css");
-@import url("../blocks/front-window/__text-container/front-window__text-container.css");
-@import url("../blocks/front-window/__subtitle/front-window__subtitle.css");
-@import url("../blocks/front-window/__create-button/front-window__create-button.css");
-
-
-/*Initiatives + card*/
-@import url("../blocks/initiatives/initiatives.css"); /**/
-@import url("../blocks/initiatives/__popular/initiatives__popular.css");/**/
-@import url("../blocks/initiatives/__container/initiatives__container.css");/**/
-@import url("../blocks/initiatives/__see-all-cards/initiatives__see-all-cards.css");/*card__see-all-cards*/
-@import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css");/*card__see-all-button*/
-@import url("../blocks/card/card.css");/*card*/
-@import url("../blocks/card/__container/card__container.css");/*card__container*/
-@import url("../blocks/card/__heading/card__heading.css");/*card__heading*/
-@import url("../blocks/card/__bookmark/card__bookmark.css");/*card__bookmark*/
-@import url("../blocks/card/__date/card__date.css");/*card__date*/
-@import url("../blocks/card/__theme/card__theme.css");/*card__theme*/
-@import url("../blocks/card/__main-text/card__main-text.css");/*card__main-text*/
-@import url("../blocks/card/__author/card__author.css");/*card__author*/
-@import url("../blocks/card/__main-text/_news/card__main-text_news.css");
-@import url("../blocks/card/_news/card_news.css");
-
-
-/*News*/
-@import url("../blocks/news/news.css");
-@import url("../blocks/news/__container/news__container.css");
-@import url("../blocks/news/__popular/news__popular.css");
-@import url("../blocks/news/__see-all-cards/news__see-all-cards.css");
-@import url("../blocks/news/__see-all-button/news__see-all-button.css");
-
-
-/*promo*/
-@import url("../blocks/promo/promo.css");
-@import url("../blocks/promo/__container/promo__container.css");
-@import url("../blocks/promo/__heading/promo__heading.css");
-@import url("../blocks/promo/__subheading/promo__subheading.css");
-@import url("../blocks/promo/__button/promo__button.css");
-@import url("../blocks/promo/__img/promo__img.css");
+@import url("../blocks/element/element.css");
+@import url("../blocks/element/__header/element__header.css");
+@import url("../blocks/element/__heading/element__heading.css");
+@import url("../blocks/element/__subheading/element__sudheading.css");
+@import url("../blocks/element/__user-info/element__user-info.css");
+@import url("../blocks/element/__avatar/element__avatar.css");
+@import url("../blocks/element/__info/element__info.css");
+@import url("../blocks/element/__author/element__author.css");
+@import url("../blocks/element/__date/element__date.css");
+@import url("../blocks/element/__text/element__text.css");
+@import url("../blocks/element/__like-info/element__like-info.css");
+@import url("../blocks/element/__share-button/element__share-button.css");
 
 
 /*popup*/
@@ -113,13 +96,6 @@
 @import url("../blocks/popup-card/__reply-input/popup-card__reply-input.css");
 @import url("../blocks/popup-card/__reply-confirm/popup-card__reply-confirm.css");
 @import url("../blocks/popup-card/__close-button/popup-card__close-button.css");
-
-
-
-
-
-
-
 
 
 /*footer*/
