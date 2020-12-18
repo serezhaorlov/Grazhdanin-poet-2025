@@ -1,4 +1,4 @@
-import PopUpWithForm from "../components/popupWithForm.js";
+import PopUpWithForm from "./components/popupWithForm.js";
 
 const checkbox = document.getElementById("checkbox") 
 checkbox.disabled = true;//иначе требует крестик
