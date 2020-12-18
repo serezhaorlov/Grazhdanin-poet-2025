@@ -1,7 +1,6 @@
-.footer__column_content_subscribe {
-    width: 270px;
-    height: 210px;
-
+.filter__tag-container {
+    width: 684px;
+    height: 133px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

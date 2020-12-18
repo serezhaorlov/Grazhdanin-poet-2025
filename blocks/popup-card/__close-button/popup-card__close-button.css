@@ -1,0 +1,17 @@
+.popup-card__close-button {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+    padding: 20px;
+    background: url(../../../images/close-button-form.svg);
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .popup-card__close-button:hover {
+    opacity: .6;
+  }
+  

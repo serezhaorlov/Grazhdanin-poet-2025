@@ -1,7 +1,6 @@
-.footer__column_content_subscribe {
-    width: 270px;
-    height: 210px;
-
+.element__info {
+    max-width: 448px;
+    max-height: 54px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
