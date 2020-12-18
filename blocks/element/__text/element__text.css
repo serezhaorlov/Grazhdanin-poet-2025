@@ -1,9 +1,8 @@
-.popup-card__text {
+.element__text {
     align-self: flex-start;
     max-width: 550px;
     max-height: 73px;
     margin: 0;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
