@@ -1,26 +1,41 @@
 import PopUpWithForm from "./components/popupWithForm.js";
 
+const checkbox = document.getElementById("checkbox") 
+checkbox.disabled = true;//иначе требует крестик
+
 const profileButtonOpen = document.querySelector('.header__profile-title')
 const profileWholeBlock = document.querySelector('.header__profile-container')
-document.getElementById("checkbox").disabled = true;
+const createInitiativeButton = document.querySelector('.front-window__create-button')
+const cardText = document.querySelector('.card__main-text')
+
 
 const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
     profileButtonOpen.textContent = inputdata.text
     popupWithProfile.close()
 }});
 
+const popupInitiative = new PopUpWithForm ('.popup-initiative', {handleFormSubmit: (inputdata) => {
+    console.log(inputdata)
+    cardText.textContent = inputdata.text
+    popupInitiative.close()
+}})
 popupWithProfile.setEventListeners()
+popupInitiative.setEventListeners()
 
-const openFullProfile = () => {
+
+const openFullProfile = () => { //фукции потому что потом все равно делать если менять данные профиля через api
     popupWithProfile.open()
 }
 
+const openCreateInitiative = () => {
+    popupInitiative.open()
+}
 
 
 
 profileWholeBlock.addEventListener('click', () => openFullProfile())
 
-
+createInitiativeButton.addEventListener('click', () => openCreateInitiative())
 
 
 
