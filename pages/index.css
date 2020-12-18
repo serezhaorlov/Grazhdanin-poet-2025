@@ -85,7 +85,6 @@
 @import url("../blocks/popup-profile-full/__user-settings/popup-profile-full__user-settings.css");
 @import url("../blocks/popup-profile-full/__user-saved/popup-profile-full__user-saved.css");
 @import url("../blocks/popup-profile-full/__button/popup-profile-full__button.css");
-@import url("../blocks/popup-profile-full/__button/_new-user/popup-profile-full__button_new-user.css");
 
 @import url("../blocks/popup-card/popup-card.css");
 @import url("../blocks/popup-card/__content/popup-card__content.css");
@@ -146,7 +145,6 @@
 @import url("../blocks/form/__error/error.css");
 
 @import url("../blocks/form/__close-button/form__close-button.css");
-@import url("../blocks/form/__close-button/_add/form__close-button_add.css");
 @import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__link/form__link.css");
 @import url("../blocks/form/__button/_unactive/form__button_unactive.css");
