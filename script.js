@@ -1,3 +1,61 @@
+import PopUpWithForm from "./components/popupWithForm.js";
+
+const profileButtonOpen = document.querySelector('.header__profile-title')
+const profileWholeBlock = document.querySelector('.header__profile-container')
+document.getElementById("checkbox").disabled = true;
+
+const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
+    profileButtonOpen.textContent = inputdata.text
+    popupWithProfile.close()
+}});
+
+popupWithProfile.setEventListeners()
+
+const openFullProfile = () => {
+    popupWithProfile.open()
+}
+
+
+
+
+profileWholeBlock.addEventListener('click', () => openFullProfile())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const myStorage = window.localStorage;
 // const form = document.querySelector('.form');
 // const saveButton = document.querySelector(".save-btn");
@@ -38,33 +96,33 @@
 
 
 
-const profileHeaderButton = document.querySelector('.header__profile-container');
-const regButton = document.querySelector('.header__logo');
-const makeInitiativeButton = document.querySelector('.front-window__create-button');
-const subscribeButton = document.querySelector('.footer__subscribe-button')
-const bookmsrkButton =document.querySelector('.card__bookmark');
-const seeAllButton = document.querySelector('.initiatives__see-all-button')
-const cardButton = document.querySelectorAll('.card');
+// const profileHeaderButton = document.querySelector('.header__profile-title');
+// const regButton = document.querySelector('.header__logo');
+// const makeInitiativeButton = document.querySelector('.front-window__create-button');
+// const subscribeButton = document.querySelector('.footer__subscribe-button')
+// const bookmsrkButton =document.querySelector('.card__bookmark');
+// const seeAllButton = document.querySelector('.initiatives__see-all-button')
+// const cardButton = document.querySelectorAll('.card');
 
-const popupProfile = document.querySelector('.popup-profile');
-const popupEnter = document.querySelector('.popup');
-const popupSubscribed = document.querySelector('.popup-subscribe');
-const popupReg = document.querySelector('.popup-reg');
-const popupMakeInitiative = document.querySelector('.popup-initiative')
-const popupUser = document.querySelector('.popup-profile-full')
-const popupCard = document.querySelector('.popup-card');
+// const popupProfile = document.querySelector('.popup-profile-full');
+// const popupEnter = document.querySelector('.popup');
+// const popupSubscribed = document.querySelector('.popup-subscribe');
+// const popupReg = document.querySelector('.popup-reg');
+// const popupMakeInitiative = document.querySelector('.popup-initiative')
+// const popupUser = document.querySelector('.popup-profile-full')
+// const popupCard = document.querySelector('.popup-card');
 
-const open = (popup) => {
-    popup.classList.add('popup_is-opened');
-}
+// const open = (popup) => {
+//     popup.classList.add('popup_is-opened');
+// }
 
-cardButton.forEach((card) => {
-    card.addEventListener('click', () => open(popupCard))
-})
+// cardButton.forEach((card) => {
+//     card.addEventListener('click', () => open(popupCard))
+// })
 
-profileHeaderButton.addEventListener('click', () => open(popupProfile));
-makeInitiativeButton.addEventListener('click', () => open(popupMakeInitiative));
-subscribeButton.addEventListener('click', () =>open(popupSubscribed));
-regButton.addEventListener('click', () => open(popupUser));
-bookmsrkButton.addEventListener('click', () => open(popupEnter));
-seeAllButton.addEventListener('click', () => open(popupReg)); 
+// profileHeaderButton.addEventListener('click', () => open(popupProfile));
+// makeInitiativeButton.addEventListener('click', () => open(popupMakeInitiative));
+// subscribeButton.addEventListener('click', () =>open(popupSubscribed));
+// regButton.addEventListener('click', () => open(popupUser));
+// bookmsrkButton.addEventListener('click', () => open(popupEnter));
+// seeAllButton.addEventListener('click', () => open(popupReg)); 
