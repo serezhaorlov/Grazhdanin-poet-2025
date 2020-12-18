@@ -1,4 +1,4 @@
-import PopUpWithForm from "/components/popupWithForm.js";
+import PopUpWithForm from "/components/popupWithForms.js";
 
 
 const checkbox = document.getElementById("checkbox") 
