@@ -1,4 +1,4 @@
-
+import {UserInfo} from "./components/userInfo.js"
 import PopUpWithForm from './components/popUpWithForms.js';
 import { PopupCardPreview } from './components/PopupCardPreview.js'
 import { initialCards, cardSection, elementSection, template, cardPopupElement, checkUrl, formObj } from './utils/constants.js';
@@ -13,14 +13,14 @@ checkbox.disabled = true;//иначе требует крестик
 const profileButtonOpen = document.querySelector('.header__profile-title')
 const profileWholeBlock = document.querySelector('.header__profile-container')
 const createInitiativeButton = document.querySelector('.front-window__create-button')
-const cardText = document.querySelector('.card__main-text')
-const cardTitle = document.querySelector('.card__heading')
 
 export const cardPopup = new PopupCardPreview(cardPopupElement);
 
+const usernfo = new UserInfo ({userName: '.header__profile-title'});
+
 const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
-    profileButtonOpen.textContent = inputdata.text
-    popupWithProfile.close()
+    usernfo.setUserInfo(inputdata);
+    popupWithProfile.close();
 }});
 
 const popupInitiative = new PopUpWithForm ('.popup-initiative', {handleFormSubmit: (inputdata) => {
