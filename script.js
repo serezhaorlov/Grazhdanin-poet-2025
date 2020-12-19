@@ -6,8 +6,6 @@ import { Section } from './components/Section.js';
 import { Card } from './components/Card.js';
 import { Api } from "./components/api.js";
 
-console.log("test");
-
 const checkbox = document.getElementById("checkbox") 
 checkbox.disabled = true; //иначе требует крестик
 
@@ -30,12 +28,20 @@ const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputd
     popupWithProfile.close();
 }});
 
-const popupInitiative = new PopUpWithForm ('.popup-initiative', {handleFormSubmit: (inputdata) => {
-    const modifier = 'card';
-    const card = new Card(inputdata, modifier, template, (inputdata) => {cardPopup.open(inputdata)});
-    const cardElement = card.getCard();
-    indexSection.addItem(cardElement);
-    popupInitiative.close()
+const popupInitiative = new PopUpWithForm ('.popup-initiative', {
+    handleFormSubmit: (inputdata) => {
+        console.log(inputdata.textrequest)
+        api.getAnswer(inputdata.textrequest)
+            .then((res) => {
+                const a = res[Math.floor(Math.random()*5)];
+                popupInitiative.setInputValue(a.fields.text[0])
+                console.log(a.fields.text[0])
+            })
+            
+        const modifier = 'card';
+        const card = new Card(inputdata, modifier, template, (inputdata) => {cardPopup.open(inputdata)});
+        const cardElement = card.getCard();
+        indexSection.addItem(cardElement);
 }})
 
 const openFullProfile = () => { //фукции потому что потом все равно делать если менять данные профиля через api
