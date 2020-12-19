@@ -24,9 +24,10 @@ const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputd
 }});
 
 const popupInitiative = new PopUpWithForm ('.popup-initiative', {handleFormSubmit: (inputdata) => {
-    console.log(inputdata)
-    cardTitle.textContent = inputdata.name
-    cardText.textContent = inputdata.text
+    const modifier = 'card';
+    const card = new Card(inputdata, modifier, template, (inputdata) => {cardPopup.open(inputdata)});
+    const cardElement = card.getCard();
+    indexSection.addItem(cardElement);
     popupInitiative.close()
 }})
 
@@ -59,11 +60,7 @@ const feedSection = new Section ({
     }, 
 }, elementSection);
 
-indexSection.render();
-
-// if (!checkUrl()) {
-//     feedSection.render()
-// }
+checkUrl() ? indexSection.render() : feedSection.render()
 
 profileWholeBlock.addEventListener('click', () => openFullProfile());
 createInitiativeButton.addEventListener('click', () => openCreateInitiative());
