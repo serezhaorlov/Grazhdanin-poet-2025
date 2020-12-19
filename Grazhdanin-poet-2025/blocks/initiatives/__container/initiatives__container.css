@@ -1,0 +1,9 @@
+.initiatives__container{
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 2;
+    margin: 0 0 0 401px; 
+    width: 30%;
+}
+
+

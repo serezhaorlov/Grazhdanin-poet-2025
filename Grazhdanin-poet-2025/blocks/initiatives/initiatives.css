@@ -1,0 +1,9 @@
+.initiatives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 552px);
+    grid-template-columns: repeat(auto-fit, 552px);
+    gap: 24px;
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 76px;  /*пока так, на адаптиве поправим*/
+}

@@ -1,0 +1,6 @@
+.front-window{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    background-color: rgba(196, 196, 196, 1);
+}

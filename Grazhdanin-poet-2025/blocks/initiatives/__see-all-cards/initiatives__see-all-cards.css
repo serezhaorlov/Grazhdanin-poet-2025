@@ -1,0 +1,12 @@
+.initiatives__see-all-cards{
+    margin: 0;
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    margin-right: 17px;
+}
+

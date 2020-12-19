@@ -1,0 +1,20 @@
+.promo__button{
+    width: 320px;
+    height: 72px;
+    border-radius: 8px;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    line-height: 28px;
+    background-color: #7d7d7d;
+    margin: 70px 0 40px 0;
+    color: #C4C4C4;
+}
+
+.promo__button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

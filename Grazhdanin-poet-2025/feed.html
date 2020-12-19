@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./vendors/normalize.css">
+        <link rel="stylesheet" href="./pages/feed.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="./script.js" type="module" defer></script>
+        <title>Hacaton</title>
+    </head>
+    <body class="page">
+        
+        <header class="header">
+                
+                <a href="index.html">
+                    <img class="logo" src="./images/header-logo.svg" alt="Логотип">
+                </a>
+
+                <div class="header__link-list">
+                    <a class="header__link header__link_inactive" href="#">Лента инициатив</a>
+                    <a class="header__link" href="#">Новости</a>
+                    <a class="header__link" href="#">Мои инициативы</a>
+                </div>
+
+                <input class="header__input-search" type="text" name="search" placeholder="Поиск по сайту">
+
+                <div class="header__profile-container">
+                    <h2 class="header__profile-title">Пользователь</h2>
+                    <img class="header__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                </div>
+            </div>
+        </header>   
+        <main class="main main_feed">
+
+            <section class="filter">
+                <div class="filter__container">
+                    <div class="filter__select-city">
+                        <p class="filter__paragraph">Ваш город:</p>
+                        <button class="filter__city-button">Москва</button>
+                    </div>
+                    <div class="filter__sort">
+                        <p p class="filter__paragraph"> Сортировать по</p>
+                        <button class="filter__show-sort"></button>
+                    </div>
+                </div>
+                <div class="filter__tag-container">
+                    <p class="filter__paragraph">Выберите тему</p>
+                    <div class="filter__tags">
+                        <button class="filter__tag-button">Гражданские права</button>
+                        <button class="filter__tag-button">Права животных</button>
+                        <button class="filter__tag-button">ЖКХ</button>
+                        <button class="filter__tag-button">Дети</button>
+                        <button class="filter__tag-button">Ремонт</button>
+                        <button class="filter__tag-button">Выборы</button>
+                        <button class="filter__tag-button">Здоровье</button>
+                        <button class="filter__tag-button">Ремонт</button>
+                        <button class="filter__tag-button">Выборы</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="feed">
+
+                <article class="element"> 
+                    <div class="element__header">
+                        <h5 class="element__heading">Название инициативы</h5> 
+                        <p class="element__sudheading">Инициатива №357894</p>
+                    </div>
+                    <div class="element__user-info">
+                        <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                        <div class="element__info">
+                            <p class="element__author">Алена Васильева</p>
+                            <p class="element__date">15.12.2020</p>
+                        </div>
+                    </div>
+                    <p class="element__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
+                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи
+                        Стихи Стихи Стихи Стихи Стихи
+                    </p>
+                    <div class="element__like-info">
+                            <button class="element__share-button" aria-label="share" type="button"></button>
+                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
+                    </div>
+                </article>
+
+                <article class="element"> 
+                    <div class="element__header">
+                        <h5 class="element__heading">Название инициативы</h5> 
+                        <p class="element__sudheading">Инициатива №357894</p>
+                    </div>
+                    <div class="element__user-info">
+                        <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                        <div class="element__info">
+                            <p class="element__author">Алена Васильева</p>
+                            <p class="element__date">15.12.2020</p>
+                        </div>
+                    </div>
+                    <p class="element__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
+                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи
+                        Стихи Стихи Стихи Стихи Стихи
+                    </p>
+                    <div class="element__like-info">
+                            <button class="element__share-button" aria-label="share" type="button"></button>
+                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
+                    </div>
+                </article>
+
+                <article class="element"> 
+                    <div class="element__header">
+                        <h5 class="element__heading">Название инициативы</h5> 
+                        <p class="element__sudheading">Инициатива №357894</p>
+                    </div>
+                    <div class="element__user-info">
+                        <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                        <div class="element__info">
+                            <p class="element__author">Алена Васильева</p>
+                            <p class="element__date">15.12.2020</p>
+                        </div>
+                    </div>
+                    <p class="element__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
+                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи
+                        Стихи Стихи Стихи Стихи Стихи
+                    </p>
+                    <div class="element__like-info">
+                            <button class="element__share-button" aria-label="share" type="button"></button>
+                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+        <section class="popup">
+          <form class="form">
+            <h2 class="form__heading">Вход в личный кабинет</h2>
+            <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="Логин" class="form__name form__name_login">
+            <span id="text-error" class="form__error"></span>
+            <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
+            <span id="password-error" class="form__error"></span>
+            <a href="#" class="form__link">Забыли логин или пароль?</a>
+            <div class="form__container">
+                <input type="checkbox" required="" id="checkbox" name="checkbox" value="" placeholder="" class="form__checkbox"></input>
+                <label for="checkbox" class="form___label">Чужой компьютер</label>
+            </div>
+            <button type="submit" id="submit-button" value="Сохранить" class="form__button">Войти</button>
+            <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg form__button_unactive">Зарегистрироваться</button>
+            <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
+            <button id="button-close" type="button" class="form__close-button"></button>
+          </form>  
+        </section>
+        <section class="popup-reg">
+            <form class="form">
+              <h2 class="form__heading form__heading_reg">Регистрация</h2>
+              <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="ФИО" class="form__name form__name_login">
+              <span id="text-error" class="form__error"></span>
+              <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
+              <span id="password-error" class="form__error"></span>
+              <input type="tel" required="" minlength="2" maxlength="40" id="tel" name="tel" value="" placeholder="Телефон" class="form__name form__name_tel">
+              <span id="tel-error" class="form__error"></span>
+              <p class="form__text">Нажимая кнопку “Зарегистрироваться” вы
+                соглашаетесь с <a href="#" class="form__link form__link_reg">Условиями использования</a> и <a href="#" class="form__link form__link_reg">Политикой конфиденциальности</a>
+              </p>
+              <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg">Зарегистрироваться</button>
+              <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
+              <button id="button-close" type="button" class="form__close-button"></button>
+            </form>  
+          </section>
+          <section class="popup-initiative ">
+            <form class="form">
+              <h2 class="form__heading">Создние инициативы</h2>
+              <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="Название инициативы" class="form__name form__name_login">
+              <span id="name-error" class="form__error" ></span>
+              <select name="select" class="form__select" placeholder="Тема обращения"> <!--Supplement an id here instead of using 'name'-->
+                <option value="value1" class="form__option">Тема обращения</option>
+                <option value="value2" class="form__option">Значение 2</option>
+                <option value="value3" class="form__option">Значение 3</option>
+              </select>
+              <input type="text" required="" minlength="2" maxlength="999" id="text" name="text" value="" placeholder="Введите текст..." class="form__name form__name_text">
+              <span id="name-error" class="form__error"></span>
+              <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg">Создать инициативу</button>
+              <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
+              <button id="button-close" type="button" class="form__close-button"></button>
+            </form>  
+          </section>
+          <section class="popup-profile popup-profile_new-user">
+            <div class="popup-profile__container">
+                <img class="popup-profile__user-pic popup-profile__user-pic_new-user">
+                <button class="popup-profile__button popup-profile__button_new-user">Вход</button>
+            </div>
+          </section>
+          <section class="popup-profile-full"> <!--переделать-->
+            <div class="popup-profile-full__container">
+                <div class="popup-profile-full__user-container">
+                    <a href="#" class="popup-profile-full__user-name">Петр Петров</a>
+                    <button type="button" class="popup-profile-full__user-pic"></button>
+                </div>
+                <div class="popup-profile-full__saved-container">
+                    <a href="#" class="popup-profile-full__user-saved">Избранное</a>
+                    <button type="button" class="popup-profile-full__user-settings"></button>
+                </div>
+
+                <button type="button" class="popup-profile-full__button">Выход</button>
+            </div>
+
+        </section>
+        <section class="popup-subscribe">
+            <div class="popup-subscribe__container">
+            <h4 class="popup-subscribe__title">Подписка оформлена!</h4>
+            <p class="popup-subscribe__subtitle">Вы успешно подписались на нашу рассылку, теперь вы будете получать новости о нашей компании и о самых популярных инициативах!</p>
+            <button id="button-close" type="button" class="popup-subscribe__close-button"></button>
+        </section>
+
+        <section class="popup popup-card">
+            <div class="popup-card__content"> 
+                    <div class="popup-card__header">
+                        <h5 class="popup-card__heading">Название инициативы</h5> 
+                        <p class="popup-card__sudheading">Инициатива №357894</p>
+                    </div>
+                    <div class="popup-card__user-info">
+                        <img class="popup-card__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                        <div class="popup-card__info">
+                            <p class="popup-card__author">Алена Васильева</p>
+                            <p class="popup-card__date">15.12.2020</p>
+                        </div>
+                    </div>
+                    <p class="popup-card__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
+                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
+                    </p>
+                    <div class="popup-card__like-info">
+                        <div class="popup-card__share-container">
+                            <button class="popup-card__share-button" aria-label="share" type="button"></button>
+                            <button class="popup-card__bookmark" aria-label="bookmark" type="button"></button>
+                        </div>
+                        <p class="popup-card__like-counter">10 000 человек одобрили эту инициативу</p>
+                    </div>
+                    <div class="popup-card__replies-heading">
+                            <p class="popup-card__replies-title">Комментарии</p>
+                            <button class="popup-card__show-replies-button"></button>
+                    </div>
+                    <form class="popup-card__replies-form">
+                        <input class="popup-card__reply-input" type="text">
+                        <button class="popup-card__reply-confirm" aria-label="confirm" type="submit" ></button>
+                    </form>
+                    </div>
+                    <button id="button-close" type="button" class="popup-card__close-button"></button>
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer__column footer__column_content_logo">
+                <a href="index.html">
+                    <img class="logo" src="./images/header-logo.svg" alt="Логотип">
+                </a>
+                
+                <div class="footer__social-links">
+                    <p class="footer__title">Наши соцсети</p>
+                    <div class="footer__logo-links">
+                        <a class="footer__logo-link footer__logo-link_vk" href="#"></a>
+                        <a class="footer__logo-link footer__logo-link_instagram" href="#"></a>
+                        <a class="footer__logo-link footer__logo-link_twitter" href="#"></a>
+                        <a class="footer__logo-link footer__logo-link_telegram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__column footer__column_content_about">
+                <h3 class="footer__heading">Об организации</h3>
+                <nav class="footer__nav">
+                        <a class="footer__link" href="#">Вакансии</a>
+                        <a class="footer__link" href="#">Служба поддержки</a>
+                        <a class="footer__link" href="#">Часто задаваемые вопросы</a>
+                        <a class="footer__link" href="#">Првила публикации</a>
+                </nav>
+            </div>
+
+            <div class="footer__column footer__column_content_subscribe">
+                <p class="footer__paragraph">
+                    Подпишитесь,на новости нашей организации, что бы всегда быть в курсе событий
+                </p>
+                <input class="footer__input-email" type="email" placeholder="Введите ваш E-mail">
+                <button class="footer__subscribe-button">Подписаться</button>
+
+            </div>
+
+        </footer>
+    </body>

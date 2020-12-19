@@ -1,0 +1,15 @@
+.form__select{
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 320px;
+    min-height: 56px;
+    margin: 32px 36px;
+    padding-left: 24px;
+    color: grey;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+}

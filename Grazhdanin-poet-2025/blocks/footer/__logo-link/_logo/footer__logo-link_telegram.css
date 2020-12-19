@@ -1,0 +1,9 @@
+.footer__logo-link_telegram {
+    background-image: url(../../../../images/icons/telegram_icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
