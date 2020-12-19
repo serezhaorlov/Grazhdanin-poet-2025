@@ -1,8 +1,0 @@
-.promo__container{
-    display: flex;
-    flex-direction: column;
-    width: 576px;
-    align-items: flex-start;
-    padding: 0 96px;
-    background-color: rgba(196, 196, 196, 1)
-}

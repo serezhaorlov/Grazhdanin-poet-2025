@@ -1,7 +1,0 @@
-.footer__logo-link {
-    cursor: pointer;
-}
-
-.footer__logo-link:hover {
-    opacity: .8;
-    transition: .2s, ease-in-out, linear;

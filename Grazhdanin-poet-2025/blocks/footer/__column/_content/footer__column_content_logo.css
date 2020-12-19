@@ -1,9 +1,0 @@
-.footer__column_content_logo {
-    width: 170px;
-    height: 210px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
