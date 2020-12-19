@@ -15,6 +15,8 @@ export class Card {
 
     _checkElement() {
         if (this._modifier === 'element') {
+            console.log(this._modifier)
+
             this._cardTheme = null;
             this._cardLikeCounter = this._card.querySelector(`.${this._modifier}__like-counter`);
             this._cardSubheading = this._card.querySelector(`.${this._modifier}__sudheading`);

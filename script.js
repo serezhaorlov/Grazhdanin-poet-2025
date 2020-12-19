@@ -57,9 +57,13 @@ const feedSection = new Section ({
         const cardElement = card.getCard();
         feedSection.addItem(cardElement);
     }, 
-}, elementSection)
+}, elementSection);
 
-checkUrl() ? indexSection.render() : feedSection.render()
+indexSection.render();
+
+// if (!checkUrl()) {
+//     feedSection.render()
+// }
 
 profileWholeBlock.addEventListener('click', () => openFullProfile());
 createInitiativeButton.addEventListener('click', () => openCreateInitiative());
