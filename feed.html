@@ -8,6 +8,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <script src="./script.js" type="module" defer></script>
+        <script src="./components/popup.js" type="module" defer></script>
+        <script src="./components/userInfo.js" type="module" defer></script>
+        <script src="./components/formValidator.js" type="module" defer></script>
+        <script src="./utils/constants.js" type="module" defer></script>
         <title>Hacaton</title>
     </head>
     <body class="page">
@@ -62,74 +66,7 @@
 
             </section>
 
-            <section class="feed">
-
-                <article class="element"> 
-                    <div class="element__header">
-                        <h5 class="element__heading">Название инициативы</h5> 
-                        <p class="element__sudheading">Инициатива №357894</p>
-                    </div>
-                    <div class="element__user-info">
-                        <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
-                        <div class="element__info">
-                            <p class="element__author">Алена Васильева</p>
-                            <p class="element__date">15.12.2020</p>
-                        </div>
-                    </div>
-                    <p class="element__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
-                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи
-                        Стихи Стихи Стихи Стихи Стихи
-                    </p>
-                    <div class="element__like-info">
-                            <button class="element__share-button" aria-label="share" type="button"></button>
-                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
-                    </div>
-                </article>
-
-                <article class="element"> 
-                    <div class="element__header">
-                        <h5 class="element__heading">Название инициативы</h5> 
-                        <p class="element__sudheading">Инициатива №357894</p>
-                    </div>
-                    <div class="element__user-info">
-                        <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
-                        <div class="element__info">
-                            <p class="element__author">Алена Васильева</p>
-                            <p class="element__date">15.12.2020</p>
-                        </div>
-                    </div>
-                    <p class="element__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
-                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи
-                        Стихи Стихи Стихи Стихи Стихи
-                    </p>
-                    <div class="element__like-info">
-                            <button class="element__share-button" aria-label="share" type="button"></button>
-                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
-                    </div>
-                </article>
-
-                <article class="element"> 
-                    <div class="element__header">
-                        <h5 class="element__heading">Название инициативы</h5> 
-                        <p class="element__sudheading">Инициатива №357894</p>
-                    </div>
-                    <div class="element__user-info">
-                        <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
-                        <div class="element__info">
-                            <p class="element__author">Алена Васильева</p>
-                            <p class="element__date">15.12.2020</p>
-                        </div>
-                    </div>
-                    <p class="element__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
-                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи
-                        Стихи Стихи Стихи Стихи Стихи
-                    </p>
-                    <div class="element__like-info">
-                            <button class="element__share-button" aria-label="share" type="button"></button>
-                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
-                    </div>
-                </article>
-
+            <section class="feed"> 
             </section>
         </main>
         <section class="popup">
@@ -214,29 +151,29 @@
 
         <section class="popup popup-card">
             <div class="popup-card__content"> 
+                <button id="button-close" type="button" class="form__close-button"></button>
                     <div class="popup-card__header">
-                        <h5 class="popup-card__heading">Название инициативы</h5> 
-                        <p class="popup-card__sudheading">Инициатива №357894</p>
+                        <h5 class="popup-card__heading"></h5> 
+                        <p class="popup-card__sudheading"></p>
                     </div>
                     <div class="popup-card__user-info">
                         <img class="popup-card__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
                         <div class="popup-card__info">
-                            <p class="popup-card__author">Алена Васильева</p>
-                            <p class="popup-card__date">15.12.2020</p>
+                            <p class="popup-card__author"></p>
+                            <p class="popup-card__date"></p>
                         </div>
                     </div>
-                    <p class="popup-card__text">Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
-                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
+                    <p class="popup-card__text">
                     </p>
                     <div class="popup-card__like-info">
                         <div class="popup-card__share-container">
                             <button class="popup-card__share-button" aria-label="share" type="button"></button>
                             <button class="popup-card__bookmark" aria-label="bookmark" type="button"></button>
                         </div>
-                        <p class="popup-card__like-counter">10 000 человек одобрили эту инициативу</p>
+                        <p class="popup-card__like-counter"></p>
                     </div>
                     <div class="popup-card__replies-heading">
-                            <p class="popup-card__replies-title">Комментарии</p>
+                            <p class="popup-card__replies-title"></p>
                             <button class="popup-card__show-replies-button"></button>
                     </div>
                     <form class="popup-card__replies-form">
@@ -244,13 +181,29 @@
                         <button class="popup-card__reply-confirm" aria-label="confirm" type="submit" ></button>
                     </form>
                     </div>
-                    <button id="button-close" type="button" class="popup-card__close-button"></button>
             </div>
         </section>
 
-
-
-
+        <template class="template"> 
+            <article class="element"> 
+                <div class="element__header">
+                    <h5 class="element__heading"></h5> 
+                    <p class="element__sudheading"></p>
+                </div>
+                <div class="element__user-info">
+                    <img class="element__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                    <div class="element__info">
+                        <p class="element__author"></p>
+                        <p class="element__date"></p>
+                    </div>
+                </div>
+                <p class="element__main-text"></p>
+                <div class="element__like-info">
+                        <button class="element__share-button" aria-label="share" type="button"></button>
+                        <p class="element__like-counter"></p>
+                </div>
+            </article>
+        </template>
 
         <footer class="footer">
             <div class="footer__column footer__column_content_logo">

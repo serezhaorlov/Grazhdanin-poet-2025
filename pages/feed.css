@@ -34,7 +34,7 @@
 @import url("../blocks/element/__info/element__info.css");
 @import url("../blocks/element/__author/element__author.css");
 @import url("../blocks/element/__date/element__date.css");
-@import url("../blocks/element/__text/element__text.css");
+@import url("../blocks/element/__main-text/element__main-text.css");
 @import url("../blocks/element/__like-info/element__like-info.css");
 @import url("../blocks/element/__share-button/element__share-button.css");
 
@@ -95,7 +95,6 @@
 @import url("../blocks/popup-card/__replies-form/popup-card__replies-form.css");
 @import url("../blocks/popup-card/__reply-input/popup-card__reply-input.css");
 @import url("../blocks/popup-card/__reply-confirm/popup-card__reply-confirm.css");
-@import url("../blocks/popup-card/__close-button/popup-card__close-button.css");
 
 
 /*footer*/

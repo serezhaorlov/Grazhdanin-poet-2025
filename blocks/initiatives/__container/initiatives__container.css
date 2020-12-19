@@ -1,9 +1,8 @@
 .initiatives__container{
+    align-self: flex-end;
     display: flex;
-    grid-column-start: 3;
-    grid-column-end: 2;
-    margin: 0 0 0 401px; 
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
     width: 30%;
 }
-
-

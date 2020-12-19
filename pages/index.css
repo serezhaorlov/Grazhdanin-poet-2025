@@ -27,6 +27,7 @@
 @import url("../blocks/initiatives/__container/initiatives__container.css");/**/
 @import url("../blocks/initiatives/__see-all-cards/initiatives__see-all-cards.css");/*card__see-all-cards*/
 @import url("../blocks/initiatives/__see-all-button/initiatives__see-all-button.css");/*card__see-all-button*/
+@import url("../blocks/cards/cards.css");
 @import url("../blocks/card/card.css");/*card*/
 @import url("../blocks/card/__container/card__container.css");/*card__container*/
 @import url("../blocks/card/__heading/card__heading.css");/*card__heading*/

@@ -1,8 +1,7 @@
 .initiatives__popular{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width: fit-content;
+    max-width: 1128px;
     padding: 80px 10px 48px 0;
+    align-self: flex-start;
     margin: 0;
     font-family: Roboto;
     font-style: normal;
