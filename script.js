@@ -1,6 +1,5 @@
-import PopUpWithForm from "/components/popupWithForms.js";
-
-
+import PopUpWithForm from "./components/popupWithForms.js";
+import {UserInfo} from "./components/userInfo.js";
 const checkbox = document.getElementById("checkbox") 
 checkbox.disabled = true;//иначе требует крестик
 
@@ -11,8 +10,10 @@ const cardText = document.querySelector('.card__main-text')
 const cardTitle = document.querySelector('.card__heading')
 
 
+const userInfo = new UserInfo({ userName: '.header__profile-title'})
+
 const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
-    profileButtonOpen.textContent = inputdata.text
+    userInfo.setUserInfo(inputdata) 
     popupWithProfile.close()
 }});
 
