@@ -8,6 +8,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <script src="./script.js" type="module" defer></script>
+        <!-- <script src="./components/popup.js" type="module" defer></script>
+        <script src="./components/userInfo.js" type="module" defer></script>
+        <script src="./components/formValidator.js" type="module" defer></script>
+        <script src="./utils/constants.js" type="module" defer></script> -->
         <title>Hacaton</title>
     </head>
     <body class="page">
@@ -41,66 +45,14 @@
             </section>
             <section class="initiatives">
                 <h2 class="initiatives__popular">Популярные инициативы</h2>
-                <div class="card"> <!--card-->
-                    <div class="card__container"> <!--card__container-->
-                        <h5 class="card__heading">Название инициативы</h5> <!--card__heading-->
-                        <button alt="bookmark" class="card__bookmark"></button> <!--card__bookmark-->
-                    </div>
-                    <div class="card__container"> <!--card__container-->
-                        <p class="card__date">15.12.2020</p> <!--card__date-->
-                        <p class="card__theme">Животные</p> <!--card__theme-->
-                    </div> <!--card__main-text-->
-                    <p class="card__main-text">СтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтизхиСтихиСихиСтихиСтихиСтихиСтихи...</p>
-                    <p class="card__author">Алена Васильева</p> <!--card__author-->
-                </div>
-
-                <div class="card"> <!--card-->
-                    <div class="card__container"> <!--card__container-->
-                        <h5 class="card__heading">Название инициативы</h5> <!--card__heading-->
-                        <button alt="bookmark" class="card__bookmark"></button> <!--card__bookmark-->
-                    </div>
-                    <div class="card__container"> <!--card__container-->
-                        <p class="card__date">15.12.2020</p> <!--card__date-->
-                        <p class="card__theme">Животные</p> <!--card__theme-->
-                    </div> <!--card__main-text-->
-                    <p class="card__main-text">СтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтизхиСтихиСихиСтихиСтихиСтихиСтихи...</p>
-                    <p class="card__author">Алена Васильева</p> <!--card__author-->
-                </div>
-
-                <div class="card"> <!--card-->
-                    <div class="card__container"> <!--card__container-->
-                        <h5 class="card__heading">Название инициативы</h5> <!--card__heading-->
-                        <button alt="bookmark" class="card__bookmark"></button> <!--card__bookmark-->
-                    </div>
-                    <div class="card__container"> <!--card__container-->
-                        <p class="card__date">15.12.2020</p> <!--card__date-->
-                        <p class="card__theme">Животные</p> <!--card__theme-->
-                    </div> <!--card__main-text-->
-                    <p class="card__main-text">СтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтихиСтизхиСтихиСихиСтихиСтихиСтихиСтихи...</p>
-                    <p class="card__author">Алена Васильева</p> <!--card__author-->
-                </div>
-
-                <div class="card"> <!--card-->
-                    <div class="card__container"> <!--card__container-->
-                        <h5 class="card__heading">Название инициативы</h5> <!--card__heading-->
-                        <button alt="bookmark" class="card__bookmark"></button> <!--card__bookmark-->
-                    </div>
-                    <div class="card__container"> <!--card__container-->
-                        <p class="card__date">15.12.2020</p> <!--card__date-->
-                        <p class="card__theme">Животные</p> <!--card__theme-->
-                    </div> <!--card__main-text-->
-                    <p class="card__main-text">Стихи Стихи Стихи Стихи 
-                        Стихи Стихи Стихи Стихи Стихи Стихи Стихи Стихи 
-                        Стихи Стизхи Стихи Сихи Стих 
-                        иСтихиСтихиСтихи...
-                    </p>
-                    <p class="card__author">Алена Васильева</p> <!--card__author-->
-                </div>
+                
+                <section class="cards"></section>
 
                 <div class="initiatives__container">
                     <p class="initiatives__see-all-cards">Смотреть все</p> <!--card__see-all-cards-->
                     <button class="initiatives__see-all-button"></button> <!---->
                 </div>
+
             </section>
             <section class="news">
                 <h2 class="news__popular">Новости</h2>
@@ -217,7 +169,7 @@
 
         <section class="popup popup-card">
             <div class="popup-card__content"> 
-                <button id="button-close" type="button" class="popup-card__close-button"></button>
+                <button id="button-close" type="button" class="form__close-button"></button>
                     <div class="popup-card__header">
                         <h5 class="popup-card__heading">Название инициативы</h5> 
                         <p class="popup-card__sudheading">Инициатива №357894</p>
@@ -251,9 +203,21 @@
             </div>
         </section>
 
-
-
-
+        <template class="template"> 
+            <div class="card"> <!--card-->
+                <div class="card__container"> <!--card__container-->
+                    <h5 class="card__heading"></h5> <!--card__heading-->
+                    <button alt="bookmark" class="card__bookmark"></button> <!--card__bookmark-->
+                </div>
+                <div class="card__container"> <!--card__container-->
+                    <p class="card__date"></p> <!--card__date-->
+                    <p class="card__theme"></p> <!--card__theme-->
+                </div> <!--card__main-text-->
+                <p class="card__main-text"></p>
+                <p class="card__author"></p> <!--card__author-->
+            </div>
+        </template>
+        
 
         <footer class="footer">
             <div class="footer__column footer__column_content_logo">
