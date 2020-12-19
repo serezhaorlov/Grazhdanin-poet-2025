@@ -1,18 +1,25 @@
-import {UserInfo} from "./components/userInfo.js"
+import { UserInfo } from "./components/userInfo.js"
 import PopUpWithForm from './components/popUpWithForms.js';
 import { PopupCardPreview } from './components/PopupCardPreview.js'
-import { initialCards, cardSection, elementSection, template, cardPopupElement, checkUrl, formObj } from './utils/constants.js';
+import { initialCards, cardSection, elementSection, template, cardPopupElement, checkUrl } from './utils/constants.js';
 import { Section } from './components/Section.js';
 import { Card } from './components/Card.js';
+import { Api } from "./components/api.js";
 
 console.log("test");
 
 const checkbox = document.getElementById("checkbox") 
-checkbox.disabled = true;//иначе требует крестик
+checkbox.disabled = true; //иначе требует крестик
 
-const profileButtonOpen = document.querySelector('.header__profile-title')
 const profileWholeBlock = document.querySelector('.header__profile-container')
 const createInitiativeButton = document.querySelector('.front-window__create-button')
+
+const api = new Api({url:'http://buymebuyme.xyz?q='})
+api.getAnswer('вихрем')
+.then((res) => {
+    const a = res[Math.floor(Math.random()*5)];
+    console.log(a.fields.text[0])
+})
 
 export const cardPopup = new PopupCardPreview(cardPopupElement);
 
