@@ -23,9 +23,21 @@ export default class PopUpWithForm extends Popup {
     this._inputList.forEach(input => {
       this._formValues[input.name] = input.value;
     });
+    this._formValues.date = this._setDateWhenCardCreate();
+    console.log(this._formValues.date);
+
     console.log(this._formValues);
 
     return this._formValues;
+  }
+
+  _setDateWhenCardCreate() {
+    const data = new Date();
+    const year = data.getFullYear();
+    const month = data.getMonth();
+    const day = data.getDate();
+    const date = `${day}.${month}.${year}`;
+    return date
   }
 
   setEventListeners() {
