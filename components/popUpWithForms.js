@@ -26,6 +26,7 @@ export default class PopUpWithForm extends Popup {
         return this._formValues;
     }
 
+
     _setDateWhenCardCreate() {
         const data = new Date();
         const year = data.getFullYear();
