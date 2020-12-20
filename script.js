@@ -13,7 +13,7 @@ checkbox.disabled = true; //иначе требует крестик
 const profileWholeBlock = document.querySelector('.header__profile-container')
 const createInitiativeButton = document.querySelector('.front-window__create-button')
 
-const api = new Api({url:'http://buymebuyme.xyz?q='})
+const api = new Api({url:'https://buymebuyme.xyz?q='})
 
 export const cardPopup = new PopupCardPreview(cardPopupElement);
 
