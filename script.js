@@ -30,12 +30,18 @@ const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputd
 
 const popupInitiative = new PopUpWithForm ('.popup-initiative', {
     handleFormSubmit: (inputdata) => {
-        console.log(inputdata.textrequest)
-        api.getAnswer(inputdata.textrequest)
+        api.getAnswer(inputdata.theme)
             .then((res) => {
-                const a = res[Math.floor(Math.random()*5)];
-                popupInitiative.setInputValue(a.fields.text[0])
-                console.log(a.fields.text[0])
+                console.log(res)
+                const number = Object.keys(res).length - 1;//количество объектов вернувшееся с сервера
+                const poemObject = res[Math.floor(Math.random()*number)];//рандомный объект с стихотворением, не превыщающая количество объектов
+                const poemString = poemObject.fields.text[0]
+                return poemString;
+            })
+            .then ((res) => {
+                const popup = document.querySelector('.popup-initiative');
+                const textInput = popup.querySelector('#texted');
+                textInput.value = res;
             })
             
         const modifier = 'card';

@@ -4,8 +4,6 @@ export class Api {
     }
 
     getAnswer(request) {
-        console.log(request);
-        console.log(`${this._url}${request}`)
         return fetch (`${this._url}${request}&onlyLines=${1}`, {
             method: 'GET'
         })
