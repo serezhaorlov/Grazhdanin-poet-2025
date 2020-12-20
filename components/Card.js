@@ -1,6 +1,7 @@
 export class Card {
     constructor (data, modifier, templateSelector, openCardPreview) {
         this._data = data;
+        console.log(data);
         this._heading = data.heading;
         this._subheading = data.subheading;
         this._theme = data.theme;
@@ -43,6 +44,7 @@ export class Card {
         this._cardAuthor.textContent = this._author;
 
         this._setEventListeners();
+        
         return this._card;
     }
 

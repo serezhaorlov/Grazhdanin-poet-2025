@@ -13,11 +13,9 @@ export default class PopUpWithForm extends Popup {
       this._handleFormSubmit = handleFormSubmit;
     }
 
-    setInputValue(value) {
-      console.log(value)
-      this._formMainButton.textContent = value;
-      console.log(this._formMainButton.textContent)
-    }
+    // setInputValue(value) {
+    //   this._formMainButton.value = value;
+    // }
 
     _getInputValues() {
     this._inputList = this._selectedForm.querySelectorAll('.form__name');
