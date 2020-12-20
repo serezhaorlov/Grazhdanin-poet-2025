@@ -1,0 +1,17 @@
+.form__push-button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    align-self: center;
+
+    background: #fff url("../../../images/icons/arrow_confirm_icon.svg") no-repeat center center;
+    background-size: 32px;
+    border: none;
+    cursor: pointer;
+
+}
+    
+.form__push-button:hover{
+    opacity: 0.6; /*можно до 0.8 по идее идти, будет ок*/
+    cursor: pointer;
+}
