@@ -1,0 +1,12 @@
+.initiatives__popular{
+    max-width: 1128px;
+    padding: 80px 10px 48px 0;
+    align-self: flex-start;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}

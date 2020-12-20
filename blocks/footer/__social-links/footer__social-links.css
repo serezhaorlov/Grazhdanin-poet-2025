@@ -1,0 +1,7 @@
+.footer__social-links {
+    width: 168px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

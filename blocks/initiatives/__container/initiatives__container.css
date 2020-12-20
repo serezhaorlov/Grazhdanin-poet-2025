@@ -1,0 +1,8 @@
+.initiatives__container{
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    width: 30%;
+}

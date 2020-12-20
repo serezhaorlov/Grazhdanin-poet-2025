@@ -1,0 +1,15 @@
+.filter__show-sort {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    background: #fff url("../../../images/icons/arrow_show_reply__icon.svg") no-repeat center center;
+    background-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter__show-sort:hover{
+    opacity: 0.6; /*можно до 0.8 по идее идти, будет ок*/
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.popup-card__replies-form {
+    width: 551px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
