@@ -1,7 +1,6 @@
 export class Card {
     constructor (data, modifier, templateSelector, openCardPreview) {
         this._data = data;
-        console.log(data);
         this._heading = data.heading;
         this._subheading = data.subheading;
         this._theme = data.theme;
@@ -16,8 +15,6 @@ export class Card {
 
     _checkElement() {
         if (this._modifier === 'element') {
-            console.log(this._modifier)
-
             this._cardTheme = null;
             this._cardLikeCounter = this._card.querySelector(`.${this._modifier}__like-counter`);
             this._cardSubheading = this._card.querySelector(`.${this._modifier}__sudheading`);
@@ -33,13 +30,14 @@ export class Card {
         this._card = this._template.cloneNode(true);
         this._cardHeading = this._card.querySelector(`.${this._modifier}__heading`);
         this._cardDate = this._card.querySelector(`.${this._modifier}__date`);
-        this._checkElement();
+        this._cardTheme = this._card.querySelector(`.${this._modifier}__theme`);
         this._cardText = this._card.querySelector(`.${this._modifier}__main-text`);
         this._cardAuthor = this._card.querySelector(`.${this._modifier}__author`);
         this._cardBookmark = this._card.querySelector(`.${this._modifier}__bookmark`);
         
         this._cardHeading.textContent = this._heading;
         this._cardDate.textContent = this._date;
+        this._cardTheme.textContent = this._theme;
         this._cardText.textContent = this._text;
         this._cardAuthor.textContent = this._author;
 

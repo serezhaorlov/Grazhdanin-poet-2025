@@ -1,0 +1,7 @@
+.form__push-request {
+    margin: 32px 0 24px;
+    width: 320px;
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
