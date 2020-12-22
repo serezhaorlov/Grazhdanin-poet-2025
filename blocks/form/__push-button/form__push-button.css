@@ -1,5 +1,4 @@
 .form__push-button {
-<<<<<<< HEAD
     width: 32px;
     height: 32px;
     padding: 0;
@@ -8,19 +7,6 @@
     background: transparent url("../../../images/icons/arrow_confirm_icon.svg") no-repeat center center;
     background-size: 32px;
     border: none;
-=======
-    width: 45px;
-    height: 45px;
-    padding: 0;
-    align-self: center;
-
-    background: #fff url("../../../images/icons/arrow_confirm_icon.svg") no-repeat center center;
-    background-size: 32px;
-    
-    border: none;
-    border-radius: 10px;
-    
->>>>>>> ed87159041cf9175caa8e7d6b1fed4d7d7c5da1d
     cursor: pointer;
 
 }

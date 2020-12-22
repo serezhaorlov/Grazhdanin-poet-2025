@@ -1,15 +1,9 @@
 .form__request-input {
     width: 272px;
 
-<<<<<<< HEAD
     border: 1px solid grey;
     border-radius: 10px;
     background-color: transparent;
-=======
-    border: none;
-    border-radius: 10px;
-    
->>>>>>> ed87159041cf9175caa8e7d6b1fed4d7d7c5da1d
     font-family: roboto;
     padding-left: 24px;
 }
