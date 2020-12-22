@@ -1,0 +1,6 @@
+.promo__triangle{
+    position: absolute;
+    top: 188px;
+    right: 70px;
+    z-index: 2;
+}

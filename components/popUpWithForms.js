@@ -1,16 +1,14 @@
 import Popup from './popup.js';
 
-
 export default class PopUpWithForm extends Popup {
-  constructor (popup, {handleFormSubmit}) {
-    super(popup)
-      this._selectedForm = this._popup.querySelector('.form');
-      this._saveButton = this._selectedForm.querySelector('.form__button')
-      this._fromButtonReg = this._selectedForm.querySelector('.form__button_reg');
-      this._fromTegButton = this._selectedForm.querySelector('#textrequest');
-      this._formMainButton = this._selectedForm.querySelector('#texted');
-      console.log(this._formMainButton)
-      this._handleFormSubmit = handleFormSubmit;
+    constructor (popup, {handleFormSubmit}) {
+        super(popup)
+        this._selectedForm = this._popup.querySelector('.form');
+        this._saveButton = this._selectedForm.querySelector('.form__button')
+        this._fromButtonReg = this._selectedForm.querySelector('.form__button_reg');
+        this._fromTegButton = this._selectedForm.querySelector('#textrequest');
+        this._formMainButton = this._selectedForm.querySelector('#texted');
+        this._handleFormSubmit = handleFormSubmit;
     }
 
     // setInputValue(value) {
@@ -18,31 +16,41 @@ export default class PopUpWithForm extends Popup {
     // }
     
     _getInputValues() {
-    console.log();
-    this._inputList = this._selectedForm.querySelectorAll('.form__name');
-    this._formValues = {};
-    this._inputList.forEach(input => {
-      this._formValues[input.name] = input.value;
-    });
-    console.log(this._formValues);
+        this._inputList = this._selectedForm.querySelectorAll('.form__name');
+        this._formValues = {};
+        this._formValues.date = this._setDateWhenCardCreate();
+        this._inputList.forEach(input => {
+            this._formValues[input.name] = input.value;
+        });
 
-    return this._formValues;
-  }
+        return this._formValues;
+    }
 
-  setEventListeners() {
-    this._selectedForm.addEventListener('submit', (evt) => {
-      evt.preventDefault();
-      const inputData = this._getInputValues();
 
-      this._handleFormSubmit(inputData)
-    });
+    _setDateWhenCardCreate() {
+        const data = new Date();
+        const year = data.getFullYear();
+        const month = data.getMonth();
+        const day = data.getDate();
+        const date = `${day}.${month}.${year}`;
+        
+        return date
+    }
 
-    super.setEventListeners();
-  }
+    setEventListeners() {
+        this._selectedForm.addEventListener('submit', (evt) => {
+            evt.preventDefault();
+            const inputData = this._getInputValues();
 
-  close(){
-    this._selectedForm.reset();
+            this._handleFormSubmit(inputData)
+        });
 
-    super.close()
-  }
+        super.setEventListeners();
+    }
+
+    close(){
+        this._selectedForm.reset();
+
+        super.close()
+    }
 }

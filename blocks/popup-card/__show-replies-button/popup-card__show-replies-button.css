@@ -4,7 +4,7 @@
     padding: 0;
     margin-left: 16px;
 
-    background: #fff url("../../../images/icons/arrow_show_reply__icon.svg") no-repeat center center;
+    background: transparent url("../../../images/icons/arrow_show_reply__icon.svg") no-repeat center center;
     background-size: 20px;
     border: none;
     cursor: pointer;

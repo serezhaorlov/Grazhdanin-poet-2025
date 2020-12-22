@@ -1,19 +1,20 @@
 .front-window__create-button{
     width: 320px;
-    height: 72px;
-    margin: 98px 77px 64px 0;
-    border-radius: 8px;
+    height: 56px;
+    margin: 98px 0px 64px 0;
     padding: 0;
     align-self: flex-end;
     text-align: center;
-    border: none;
-    background-color: #7d7d7d;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #C4C4C4;
+    color: #E0B962;
+    background-color: transparent;
+    border: 1px solid #E0B962;
+    border-radius: 100px;
+    z-index: 5;
 }
 
 .front-window__create-button:hover{

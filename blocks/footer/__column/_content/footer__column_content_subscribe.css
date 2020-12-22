@@ -1,8 +1,0 @@
-.footer__column_content_subscribe {
-    width: 270px;
-    height: 210px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}

@@ -1,0 +1,9 @@
+.form__request-input {
+    width: 272px;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: roboto;
+    padding-left: 24px;
+}

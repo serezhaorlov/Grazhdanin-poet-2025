@@ -4,6 +4,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 23px;
-    width: 75%;
+    line-height: 27px;
+    width: 106%;
+    
+    z-index: 2;
 }

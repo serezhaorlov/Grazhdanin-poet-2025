@@ -1,5 +1,11 @@
 .header__avatar {
     width: 32px;
+    z-index: 5;
     height: 32px;
     object-fit: cover;
+}
+
+.header__avatar:hover{
+    opacity: .6;
+    transition: .2s, ease-in-out, linear;
 }

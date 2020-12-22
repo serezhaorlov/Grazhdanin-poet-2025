@@ -4,8 +4,13 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    z-index: 5;
     color: #fff;
     text-decoration: none;
     padding-right: 10px;
 }
 
+.header__profile-title:hover{
+    opacity: .6;
+    transition: .2s, ease-in-out, linear;
+}

@@ -1,5 +1,5 @@
 .form__button_unactive {
-  background-color: white;
+  background-color: transparent;
   border: 1px solid grey;
-  color: grey;
+  color: black;
 }

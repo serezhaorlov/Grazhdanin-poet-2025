@@ -1,0 +1,6 @@
+.front-window__pic{
+    position: absolute;
+    z-index: 1;
+    max-width: 869px;
+    transform: rotate(-22deg);
+}

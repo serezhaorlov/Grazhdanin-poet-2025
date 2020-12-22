@@ -1,0 +1,10 @@
+.promo__subheading_small{
+    margin: 24px 0 0 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    width: 106%;
+    z-index: 2;
+}

@@ -5,5 +5,7 @@
     gap: 24px;
     width: 1280px;
     margin: 0 auto;
-    padding-left: 76px;
+    padding: 0 0 160px 76px;
+    background-color: #F0EBE8;
+    position: relative;
 }
