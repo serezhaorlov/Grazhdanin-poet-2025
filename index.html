@@ -168,7 +168,19 @@
                 <button class="popup-profile__button ">Вход</button>
             </div>
         </section>
-        
+
+        <section class="popup-edit">
+            <form id="form" class="form form_edit" name="form" novalidate>
+                <h2 class="form__heading">Редактировать профиль</h2>
+                <input type="text" required="" minlength="2" maxlength="40" id="name" name="name" value="" placeholder="Имя" class="form__name ">
+                <span id="name-error" class="form__error"></span>
+                <input type="text" required="" minlength="2" maxlength="200" id="about" name="about" value="" placeholder="О себе" class="form__name ">
+                <span id="about-error" class="form__error"></span>
+                <button type="submit" id="submit-button" value="Сохранить" class="form__button ">Сохранить</button>
+                <button id="button-close" type="button" class="form__close-button"></button>
+              </form>
+        </section>
+
 
         <section class="popup-profile-full"> <!--переделать-->
             <div class="popup-profile-full__container">

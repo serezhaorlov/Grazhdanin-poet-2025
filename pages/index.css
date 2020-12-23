@@ -72,6 +72,7 @@
 
 /*popup*/
 @import url("../blocks/popup/popup.css");
+@import url("../blocks/popup-edit/popup-edit.css");
 @import url("../blocks/popup-reg/popup-reg.css");
 @import url("../blocks/popup-initiative/popup-initiative.css");
 @import url("../blocks/popup-subscribe/popup-subscribe.css");
@@ -168,3 +169,4 @@
 @import url("../blocks/form/__request-input/form__request-input.css");
 @import url("../blocks/form/__push-button/form__push-button.css");
 @import url("../blocks/form/__push-button/form__push-button.css");
+@import url("../blocks/form/_edit/form_edit.css");
