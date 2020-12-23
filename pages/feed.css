@@ -10,6 +10,7 @@
 @import url("../blocks/header/__profile-container/header__profile-container.css");
 @import url("../blocks/header/__profile-title/header__profile-title.css");
 @import url("../blocks/header/__avatar/header__avatar.css");
+@import url("../blocks/header/__search-button/header__search-button.css");
 
 @import url("../blocks/main/main.css");
 @import url("../blocks/main/_feed/main_feed.css");
@@ -25,7 +26,14 @@
 @import url("../blocks/filter/__tags/filter__tags.css");
 @import url("../blocks/filter/__tag-button/filter__tag-button.css");
 
+
+@import url("../blocks/feed/feed.css");
+@import url("../blocks/feed/__square/feed__square.css");
+@import url("../blocks/feed/__triangle/feed__triangle.css");
+@import url("../blocks/feed/__triangle/_bot/feed__triangle_bot.css");
+
 @import url("../blocks/element/element.css");
+@import url("../blocks/element/__container/element__container.css");
 @import url("../blocks/element/__header/element__header.css");
 @import url("../blocks/element/__heading/element__heading.css");
 @import url("../blocks/element/__subheading/element__sudheading.css");
@@ -101,23 +109,16 @@
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__column/footer__column.css");
 @import url("../blocks/footer/__column/_content/footer__column_content_logo.css");
-@import url("../blocks/footer/__column/_content/footer__column_content_about.css");
-@import url("../blocks/footer/__column/_content/footer__column_content_subscribe.css");
 @import url("../blocks/footer/__social-links/footer__social-links.css");
 @import url("../blocks/footer/__title/footer__title.css");
 @import url("../blocks/footer/__logo-links/footer__logo-links.css");
-@import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__logo-link/footer__logo-link.css");
 @import url("../blocks/footer/__logo-link/_logo/footer__logo-link_instagram.css");
 @import url("../blocks/footer/__logo-link/_logo/footer__logo-link_telegram.css");
 @import url("../blocks/footer/__logo-link/_logo/footer__logo-link_twitter.css");
 @import url("../blocks/footer/__logo-link/_logo/footer__logo-link_vk.css");
-@import url("../blocks/footer/__nav/footer__nav.css");
-@import url("../blocks/footer/__heading/footer__heading.css");
-@import url("../blocks/footer/__paragraph/footer__paragraph.css");
-@import url("../blocks/footer/__subscribe-button/footer__subscribe-button.css");
-@import url("../blocks/footer/__input-email/footer__input-email.css");
-
+@import url("../blocks/footer/__container/footer__container.css");
+@import url("../blocks/footer/__copyright/footer__copyright.css");
 
 
 

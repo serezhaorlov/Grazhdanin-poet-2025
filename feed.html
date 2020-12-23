@@ -17,25 +17,25 @@
     <body class="page">
         
         <header class="header">
-                
-                <a href="index.html">
-                    <img class="logo" src="./images/header-logo.svg" alt="Логотип">
-                </a>
+            <a href="#">
+                <img class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+            </a>
 
                 <div class="header__link-list">
-                    <a class="header__link header__link_inactive" href="#">Лента инициатив</a>
+                    <a class="header__link" href="feed.html">Лента инициатив</a>
                     <a class="header__link" href="#">Новости</a>
                     <a class="header__link" href="#">Мои инициативы</a>
                 </div>
 
-                <input class="header__input-search" type="text" name="search" placeholder="Поиск по сайту">
 
                 <div class="header__profile-container">
-                    <h2 class="header__profile-title">Пользователь</h2>
+                    <button class="header__search-button" type="button"></button>
+                    <input class="header__input-search" type="text" name="search" placeholder="Поиск по сайту">
+                    <a href="#"class="header__profile-title"></a>
                     <img class="header__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
                 </div>
-            </div>
-        </header>   
+
+    </header> 
         <main class="main main_feed">
 
             <section class="filter">
@@ -67,6 +67,73 @@
             </section>
 
             <section class="feed"> 
+                <img src="./images/news-square.png" alt="" class="feed__square">
+                <img src="./images/triange-feed.png" alt="" class="feed__triangle">
+                <img src="./images/feed-triangle-bot.png" alt="" class="feed__triangle_bot">
+                <article class="element"> 
+                    <div class="element__header">
+                        <h5 class="element__heading">Меркнет зрение — сила моя...</h5> 
+                        <div class="element__container">
+                            <p class="element__sudheading">Инициатива №357892</p>
+                            <p class="element__sudheading">Здоровье</p>
+                        </div>
+                    </div>
+                    <div class="element__user-info">
+                        <img class="element__avatar" src="./images/tarkovsky.png" alt="Аватар">
+                        <div class="element__info">
+                            <p class="element__author">Арсений Тарковский</p>
+                            <p class="element__date">25.06.1907 - 27.05.1989</p>
+                        </div>
+                    </div>
+                    <p class="element__main-text">Меркнет зрение — сила моя,<br>Два незримых алмазных копья;<br>Глохнет слух, полный давнего грома...
+                        </p>
+                    <div class="element__like-info">
+                            <button class="element__share-button" aria-label="share" type="button"></button>
+                            <p class="element__like-counter">9 000 человек одобрили эту инициативу</p>
+                    </div>
+                </article>
+                <article class="element"> 
+                    <div class="element__header">
+                        <h5 class="element__heading">Вот так я сделался собакой...</h5> 
+                        <div class="element__container">
+                            <p class="element__sudheading">Инициатива №357893</p>
+                            <p class="element__sudheading">Животные</p>
+                        </div>
+                    </div>
+                    <div class="element__user-info">
+                        <img class="element__avatar" src="./images/mayakovsky.png" alt="Аватар">
+                        <div class="element__info">
+                            <p class="element__author">Владимир Маяковский</p>
+                            <p class="element__date">06.07.1893 - 14.04.1930</p>
+                        </div>
+                    </div>
+                    <p class="element__main-text">Ну, это совершенно невыносимо!<br>Весь как есть искусан злобой.<br>Злюсь не так, как могли бы вы...</p>
+                    <div class="element__like-info">
+                            <button class="element__share-button" aria-label="share" type="button"></button>
+                            <p class="element__like-counter">13 000 человек одобрили эту инициативу</p>
+                    </div>
+                </article>
+                <article class="element"> 
+                    <div class="element__header">
+                        <h5 class="element__heading">Я не то что схожу с ума...</h5> 
+                        <div class="element__container">
+                            <p class="element__sudheading">Инициатива №357894</p>
+                            <p class="element__sudheading">Здоровье</p>
+                        </div>
+                    </div>
+                    <div class="element__user-info">
+                        <img class="element__avatar" src="./images/brodsky.png" alt="Аватар">
+                        <div class="element__info">
+                            <p class="element__author">Иосиф Бродский</p>
+                            <p class="element__date">24.05.1940 - 28.01.1996</p>
+                        </div>
+                    </div>
+                    <p class="element__main-text">Я не то что схожу с ума, но устал за лето.<br>За рубашкой в комод полезешь, и день потерян.<br>Поскорей бы, что ли, пришла зима и занесла всё это — </p>
+                    <div class="element__like-info">
+                            <button class="element__share-button" aria-label="share" type="button"></button>
+                            <p class="element__like-counter">10 000 человек одобрили эту инициативу</p>
+                    </div>
+                </article>
             </section>
         </main>
         <section class="popup">
@@ -206,13 +273,13 @@
         </template>
 
         <footer class="footer">
-            <div class="footer__column footer__column_content_logo">
-                <a href="index.html">
-                    <img class="logo" src="./images/header-logo.svg" alt="Логотип">
-                </a>
-                
+            <div class="footer__container">
+                <div class="footer__column footer__column_content_logo">
+                    <a href="#">
+                        <img class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+                    </a>
+                </div>
                 <div class="footer__social-links">
-                    <p class="footer__title">Наши соцсети</p>
                     <div class="footer__logo-links">
                         <a class="footer__logo-link footer__logo-link_vk" href="#"></a>
                         <a class="footer__logo-link footer__logo-link_instagram" href="#"></a>
@@ -221,25 +288,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="footer__column footer__column_content_about">
-                <h3 class="footer__heading">Об организации</h3>
-                <nav class="footer__nav">
-                        <a class="footer__link" href="#">Вакансии</a>
-                        <a class="footer__link" href="#">Служба поддержки</a>
-                        <a class="footer__link" href="#">Часто задаваемые вопросы</a>
-                        <a class="footer__link" href="#">Првила публикации</a>
-                </nav>
-            </div>
-
-            <div class="footer__column footer__column_content_subscribe">
-                <p class="footer__paragraph">
-                    Подпишитесь,на новости нашей организации, что бы всегда быть в курсе событий
-                </p>
-                <input class="footer__input-email" type="email" placeholder="Введите ваш E-mail">
-                <button class="footer__subscribe-button">Подписаться</button>
-
-            </div>
-
+            <h3 class="footer__copyright">© 2020 Гражданские инициативы</h3>
         </footer>
     </body>

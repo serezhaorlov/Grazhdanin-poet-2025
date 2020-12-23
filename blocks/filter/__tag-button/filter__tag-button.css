@@ -4,7 +4,8 @@
     border: 1px solid #7D7D7D;
     box-sizing: border-box;
     border-radius: 8px;
-
+    background-color: #F0EBE8;
+    z-index: 3;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;

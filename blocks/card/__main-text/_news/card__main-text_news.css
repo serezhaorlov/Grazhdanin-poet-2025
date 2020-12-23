@@ -2,5 +2,8 @@
     margin: 20px 0;
     padding: 0;
     width: 95%;
-    white-space: normal;
+    max-height: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
 }

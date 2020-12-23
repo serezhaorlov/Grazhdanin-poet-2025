@@ -9,4 +9,8 @@
     width: 61%;
     word-break: break-word;
     margin: 0;
+    max-height: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
 }

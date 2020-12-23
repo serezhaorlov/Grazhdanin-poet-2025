@@ -2,8 +2,9 @@
     width: 20px;
     height: 20px;
     padding: 0;
+    z-index: 3;
 
-    background: #fff url("../../../images/icons/arrow_show_reply__icon.svg") no-repeat center center;
+    background: transparent url("../../../images/icons/arrow_show_reply__icon.svg") no-repeat center center;
     background-size: 20px;
     border: none;
     cursor: pointer;
