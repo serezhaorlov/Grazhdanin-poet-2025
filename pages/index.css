@@ -38,6 +38,7 @@
 @import url("../blocks/card/__container/card__container.css");/*card__container*/
 @import url("../blocks/card/__heading/card__heading.css");/*card__heading*/
 @import url("../blocks/card/__bookmark/card__bookmark.css");/*card__bookmark*/
+@import url("../blocks/card/__bookmark/_active/card__bookmark_active.css");
 @import url("../blocks/card/__date/card__date.css");/*card__date*/
 @import url("../blocks/card/__theme/card__theme.css");/*card__theme*/
 @import url("../blocks/card/__main-text/card__main-text.css");/*card__main-text*/
@@ -112,6 +113,7 @@
 @import url("../blocks/popup-card/__avatar/popup-card__avatar.css");
 @import url("../blocks/popup-card/__author/popup-card__author.css");
 @import url("../blocks/popup-card/__date/popup-card__date.css");
+@import url("../blocks/popup-card/__text/popup-card__text.css");
 @import url("../blocks/popup-card/__like-info/popup-card__like-info.css");
 @import url("../blocks/popup-card/__share-container/popup-card__share-container.css");
 @import url("../blocks/popup-card/__share-button/popup-card__share-button.css");

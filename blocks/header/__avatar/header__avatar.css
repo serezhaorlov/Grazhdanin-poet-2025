@@ -2,6 +2,7 @@
     width: 32px;
     z-index: 5;
     height: 32px;
+    border-radius: 50px;
     object-fit: cover;
 }
 

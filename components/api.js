@@ -8,10 +8,10 @@ export class Api {
             method: 'GET'
         })
         .then((res) => {
-            return res.json();
-        })
-        .catch((res) => {
-            return Promise.reject(`Ошибка: ${res.status} - ${res.statusText}`);
+            if(res.ok) {
+                return res.json();
+            }
+            return Promise.reject(res.status);
         })
     }
 }

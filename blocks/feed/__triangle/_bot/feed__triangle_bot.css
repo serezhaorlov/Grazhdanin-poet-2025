@@ -2,4 +2,6 @@
     position: absolute;
     bottom: -78px;
     left: 0px;
+
+    z-index: -1;
 }
