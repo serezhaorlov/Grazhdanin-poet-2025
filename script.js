@@ -1,105 +1,78 @@
-import { UserInfo } from "./components/userInfo.js"
-import PopUpWithForm from './components/popUpWithForms.js';
+import { UserInfo } from "./components/UserInfo.js"
+import PopUpWithForm from './components/PopUpWithForms.js';
 import { PopupCardPreview } from './components/PopupCardPreview.js'
 import PopupWithRequest from './components/PopupWithRequest.js'
-import { initialCards, cardSection, template, cardPopupElement } from './utils/constants.js';
+import { initialCards, cardSection, elementSection, template, cardPopupElement, profileWholeBlock, createInitiativeButton, userAvatar, userName, checkUrl} from './utils/constants.js';
 import { Section } from './components/Section.js';
 import { Card } from './components/Card.js';
-import { Api } from "./components/api.js";
+import { FeedElement } from './components/FeedElements.js'
+import { Api } from "./components/Api.js";
 
-const checkbox = document.getElementById("checkbox") 
-checkbox.disabled = true; //иначе требует крестик
-
-const profileAvatar = document.querySelector('.header__avatar')
-const createInitiativeButton = document.querySelector('.front-window__create-button')
-const searchButtonheader = document.querySelector('.header__search-button')
+// const checkbox = document.getElementById("checkbox") 
+// checkbox.disabled = true; //иначе требует крестик
 
 const api = new Api({url:'https://buymebuyme.xyz?q='})
 
-export const cardPopup = new PopupCardPreview(cardPopupElement);
+const cardPopup = new PopupCardPreview(cardPopupElement);
 
-const usernfo = new UserInfo ({userName: '.header__profile-title'});
+const userInfo = new UserInfo (userAvatar, userName);
 
-const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
-    usernfo.setUserInfo(inputdata);
-    popupWithProfile.close();
-}});
+const popupEditProfile = new PopUpWithForm ('.popup-edit', (inputdata) => {userInfo.setUserInfo(inputdata)});
 
-const createInitiativePopup = new PopupWithRequest('.popup-initiative', (data, modifier) => addCard(data, modifier), usernfo.getUserInfo());
+const createInitiativePopup = new PopupWithRequest('.popup-initiative', (data) => addCard(data));
 
 createInitiativePopup.setRequest((value) => {
-    console.log(value);
         api.getAnswer(value)
-        .then((res) => {
-            const number = Object.keys(res).length - 1;//количество объектов вернувшееся с сервера
-            const poemObject = res[Math.floor(Math.random()*number)];//рандомный объект с стихотворением, не превыщающая количество объектов
-            const poemString = poemObject.fields.text[0]
-            return poemString;
-        })
         .then ((res) => {
-            console.log(res)
-            createInitiativePopup.setTextInInput(res);
+            if(res.length === 0) {
+                console.log("error")
+            } else {
+                createInitiativePopup.setTextInInput(res);
+            }
         })
-    })
+        .catch(err => console.log(err))
+})
 
 
 const openFullProfile = () => { //фукции потому что потом все равно делать если менять данные профиля через api
-    popupWithProfile.open()
+    popupEditProfile.open()
 }
 
 const openCreateInitiative = () => {
-    createInitiativePopup.open()
+    createInitiativePopup.open();
+    createInitiativePopup.getAuthorInfo(userInfo.getUserInfo());
 }
 
-const addCard = (cardData, modifier) => {
-    const card = new Card(cardData, modifier, template, (data) => cardPopup.open(data));
+const addCard = (cardData) => {
+    const card = new Card(cardData, template, (data) => cardPopup.open(data));
     indexSection.addItem (card.getCard());
 } 
 
+const addFeedElements = (CardData) => {
+    const element = new FeedElement (CardData, template, (data) => {cardPopup.open(data)});
+    const elementCard = element.getCard();
+    feedSection.addItem(elementCard);
+}
+
 const indexSection = new Section ({
     items: initialCards.reverse(),
-    modifier: 'card',
-    renderer: (item, modifier) => addCard(item, modifier), 
+    renderer: (item) => addCard(item), 
 }, cardSection)
 
-indexSection.render()
+const feedSection = new Section ({
+    items: initialCards.reverse(),
+    renderer: (item) => addFeedElements(item)
+}, elementSection);
 
+if(checkUrl()){
+    feedSection.render()
+} else {
+    indexSection.render()
+    createInitiativeButton.addEventListener('click', () => openCreateInitiative());
+} 
 
-// const feedSection = new Section ({
-//     items: initialCards.reverse(),
-//     modifier: 'element',
-//     renderer: (item, modifier) => {
-//         const card = new Card(item, modifier, template, (data) => {cardPopup.open(data)});
-//         const cardElement = card.getCard();
-//         feedSection.addItem(cardElement);
-//     }, 
-// }, elementSection);
-
-// checkUrl() ? indexSection.render() : feedSection.render()
-
-profileAvatar.addEventListener('click', () => openFullProfile());
-createInitiativeButton.addEventListener('click', () => openCreateInitiative());
-popupWithProfile.setEventListeners();
+profileWholeBlock.addEventListener('click', () => openFullProfile());
+// createInitiativeButton.addEventListener('click', () => openCreateInitiative());
+popupEditProfile.setEventListeners();
 createInitiativePopup.setEventListeners();
 cardPopup.setEventListeners();
-
-
-
-// const popupInitiative = new PopUpWithForm ('.popup-initiative', {
-//     handleFormSubmit: (inputdata) => {
-//         api.getAnswer(inputdata.theme)
-            // .then((res) => {
-            //     console.log(res)
-            //     const number = Object.keys(res).length - 1;//количество объектов вернувшееся с сервера
-            //     const poemObject = res[Math.floor(Math.random()*number)];//рандомный объект с стихотворением, не превыщающая количество объектов
-            //     const poemString = poemObject.fields.text[0]
-            //     return poemString;
-            // })
-            // .then ((res) => {
-            //     const popup = document.querySelector('.popup-initiative');
-            //     const textInput = popup.querySelector('#texted');
-            //     textInput.value = res;
-            // })
-            
-//             addCard (inputdata, 'card');
-// }})

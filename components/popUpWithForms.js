@@ -1,56 +1,37 @@
-import Popup from './popup.js';
+import Popup from './Popup.js';
 
 export default class PopUpWithForm extends Popup {
-    constructor (popup, {handleFormSubmit}) {
+    constructor (popup, submitFormHandler) {
         super(popup)
-        this._selectedForm = this._popup.querySelector('.form');
-        this._saveButton = this._selectedForm.querySelector('.form__button')
-        this._fromButtonReg = this._selectedForm.querySelector('.form__button_reg');
-        this._fromTegButton = this._selectedForm.querySelector('#textrequest');
-        this._formMainButton = this._selectedForm.querySelector('#texted');
-        this._handleFormSubmit = handleFormSubmit;
+        this._popupForm = this._popup.querySelector('.form');
+        this._inputFields = Array.from(this._popupForm.querySelectorAll('.form__input-field'));
+        this.submitFormHandler = submitFormHandler;
+        console.log(this.submitFormHandler);
     }
-
-    // setInputValue(value) {
-    //   this._formMainButton.value = value;
-    // }
     
     _getInputValues() {
-        this._inputList = this._selectedForm.querySelectorAll('.form__name');
         this._formValues = {};
-        this._formValues.date = this._setDateWhenCardCreate();
-        this._inputList.forEach(input => {
+        this._inputFields.forEach(input => {
             this._formValues[input.name] = input.value;
         });
-
+        console.log(this._formValues);
         return this._formValues;
     }
 
+    _submitHandler () {
+        event.preventDefault();
 
-    _setDateWhenCardCreate() {
-        const data = new Date();
-        const year = data.getFullYear();
-        const month = data.getMonth();
-        const day = data.getDate();
-        const date = `${day}.${month}.${year}`;
-        
-        return date
+        this.submitFormHandler(this._getInputValues());
+        this.close();
     }
 
     setEventListeners() {
-        this._selectedForm.addEventListener('submit', (evt) => {
-            evt.preventDefault();
-            const inputData = this._getInputValues();
-
-            this._handleFormSubmit(inputData)
-        });
-
+        this._popupForm.addEventListener('submit', this._submitHandler.bind(this));
         super.setEventListeners();
     }
 
     close(){
-        this._selectedForm.reset();
-
         super.close()
+        this._popupForm.reset();
     }
 }

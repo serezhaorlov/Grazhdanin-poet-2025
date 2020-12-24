@@ -1,4 +1,4 @@
-import Popup from './popup.js';
+import Popup from './Popup.js';
 
 export default class PopupWithRequest extends Popup {
     constructor (popup, submitFormHandler, author) {
@@ -9,7 +9,6 @@ export default class PopupWithRequest extends Popup {
         this._inputFields = Array.from(this._popupForm.querySelectorAll('.form__input-field'));
         this._pushRequestButton = this._popupForm.querySelector('.form__push-button');
         this._submitFormHandler = submitFormHandler;
-        this._author = author.name;
     }
 
     setRequest(request) {
@@ -20,7 +19,10 @@ export default class PopupWithRequest extends Popup {
         this._processRequest(this._requestInput.value)
     }
 
-    setTextInInput(poemString) { 
+    setTextInInput(res) { 
+        const number = Object.keys(res).length - 1;//количество объектов вернувшееся с сервера
+        const poemObject = res[Math.floor(Math.random()*number)];//рандомный объект с стихотворением, не превыщающая количество объектов
+        const poemString = poemObject.fields.text[0]
         this._mainTextInput.value = poemString;
     }
 
@@ -38,6 +40,8 @@ export default class PopupWithRequest extends Popup {
         this._formValues = {};
         this._formValues.date = this._setDateWhenCardCreate();
         this._formValues.user = this._author;
+        this._formValues.userAvatar = this._authorAvatar;
+        this._formValues.subheading = `Инициатива № ${Math.floor(Math.random()*1000000)}`,
         this._inputFields.forEach(input => {
             this._formValues[input.name] = input.value;
         });
@@ -45,10 +49,15 @@ export default class PopupWithRequest extends Popup {
         return this._formValues;
     }
 
+    getAuthorInfo(author) {
+        console.log(author);
+        this._author = author.name;
+        this._authorAvatar = author.avatar;
+    }
 
     _submitHandler () {
         event.preventDefault();
-        this._submitFormHandler(this._getInputValues(), 'card');
+        this._submitFormHandler(this._getInputValues());
         this.close();
     }
 
