@@ -43,6 +43,8 @@ export class Card {
 
     _setEventListeners() {
         this._cardText.addEventListener('click', () => this._openCardPreview(this._data));
-        this._cardBookmark.addEventListener('click', () => this._bookmarkFunction())
+        if (this._modifier === 'card'){
+            this._cardBookmark.addEventListener('click', () => this._bookmarkFunction())
+        }
     }
 }
