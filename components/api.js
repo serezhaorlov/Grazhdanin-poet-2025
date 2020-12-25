@@ -3,7 +3,7 @@ export class Api {
         this._url = options.url;
     }
 
-    getAnswer(request) {
+    getAnswer(request) {//запрос по введённой фразе к серверу
         return fetch (`${this._url}${request}&onlyLines=${1}`, {
             method: 'GET'
         })
