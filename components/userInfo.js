@@ -1,4 +1,4 @@
-export class UserInfo {
+export class UserInfo {// объект информации пользователя
     constructor(userAvatarSelector, userNameSelector){
         this._avatarProfile = userAvatarSelector
         this._nameProfile = userNameSelector;

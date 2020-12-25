@@ -1,14 +1,11 @@
-export const formObj = {
+export const validationElement = {
     formSelector: '.form',
-    inputSelector: '.form__name',
+    inputSelector: '.form__input-field',
     submitButtonSelector: '.form__button',
     inactiveButtonClass: 'form__button_unactive',
-    inputErrorClass: 'form_name_error',
-    formCloseButton: '.form__close-button',
-    buttonClose: '#button-close',
-    submitButtonLoading: '.form__button_loading'
+    inputErrorClass: 'form__name_error',
 }
-    
+
 export const userObject = {
     userName: ".profile__name",
 }
@@ -28,6 +25,8 @@ export const profileWholeBlock = document.querySelector('.header__avatar');
 export const createInitiativeButton = document.querySelector('.front-window__create-button');
 export const userAvatar = document.querySelector('.header__avatar');
 export const userName = document.querySelector('.header__profile-title');
+export const popupEditProfileForm = document.querySelector('.form_edit');
+export const popupAddInitiativeForm = document.querySelector('.form__add-initiative');
     
 export const initialCards = [
     {   heading: 'Вот так я сделался собакой...',

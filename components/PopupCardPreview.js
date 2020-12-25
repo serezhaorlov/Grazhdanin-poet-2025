@@ -1,6 +1,6 @@
 import Popup from './Popup.js';
 
-export class PopupCardPreview extends Popup {
+export class PopupCardPreview extends Popup {//попап превью карточки
     constructor (popup) {
         super(popup);
         this._popupHeading = this._popup.querySelector('.popup-card__heading');

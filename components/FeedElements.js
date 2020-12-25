@@ -1,6 +1,6 @@
 import { Card } from './Card.js'
 
-export class FeedElement extends Card {
+export class FeedElement extends Card {//создания элементов ленты инициатив
     constructor (data, templateSelector, openCardPreview) {
         super(data, templateSelector, openCardPreview)
         this._theme = data.theme;
