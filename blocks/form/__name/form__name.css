@@ -3,17 +3,12 @@
     border-radius: 10px;
     width: 320px;
     min-height: 56px;
-<<<<<<< HEAD
     margin: 30px 36px 0;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-=======
-    margin: 0 36px 0;
-    font-family: roboto;
->>>>>>> 8fc5c0e9395ae8de61d5ab48246feb34863acd30
     padding-left: 24px;
     background-color: transparent;
 }
