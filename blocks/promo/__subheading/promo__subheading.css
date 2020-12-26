@@ -1,8 +1,9 @@
 .promo__subheading{
-    margin: 16px 0 0 0;
-    font-family: Roboto;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
     font-size: 20px;
     line-height: 27px;
     width: 106%;

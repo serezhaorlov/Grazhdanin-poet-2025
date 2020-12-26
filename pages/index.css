@@ -50,11 +50,13 @@
 /*News*/
 @import url("../blocks/news/news.css");
 @import url("../blocks/news/__container/news__container.css");
+@import url("../blocks/news/__container/_bot/news__container_bot.css");
 @import url("../blocks/news/__popular/news__popular.css");
 @import url("../blocks/news/__see-all-button/news__see-all-button.css");
 @import url("../blocks/news/__see-all-button/_bot/news__see-all-button_bot.css");
 @import url("../blocks/news/__triangle/news__triangle.css");
 @import url("../blocks/news/__square/news__square.css");
+@import url("../blocks/news/__arrow/news__arrow.css");
 
 
 
@@ -172,3 +174,5 @@
 @import url("../blocks/form/__push-button/form__push-button.css");
 @import url("../blocks/form/__push-button/form__push-button.css");
 @import url("../blocks/form/_edit/form_edit.css");
+
+@import url("../blocks/rotation/rotation.css");

@@ -12,3 +12,10 @@
   *, *::after, *::before {
     box-sizing: inherit;
 }
+
+@font-face {
+    src: url("../../vendors/fonts/Gilroy-Extrabold.woff"),
+            url("../../vendors/fonts/Gilroy-Extrabold.woff2");
+
+    font-family: "Gilroy"
+}

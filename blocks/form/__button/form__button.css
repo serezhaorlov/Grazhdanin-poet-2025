@@ -9,15 +9,19 @@
       align-self: center;
   background-color: #CC493D;
   color: white;
+
   border: none;
-  font-family: roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
   border-radius: 10px;
+  
   margin: 32px 0 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
 }
 
 

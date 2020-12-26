@@ -1,8 +1,11 @@
 .news__container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column-start: 3;
     grid-column-end: 3;
     margin: 0px 0 0 210px;
     width: 44%;
+    z-index: 3;
 }
 
