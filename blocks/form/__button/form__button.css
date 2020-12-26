@@ -25,7 +25,10 @@
 }
 
 
-    .form__button:hover {
-    opacity: .8;
+.form__button:hover {
+    background-color: #A92C21;
     cursor: pointer;
-    }
+}
+.form__button:active{
+    background-color: #CC493D;
+}

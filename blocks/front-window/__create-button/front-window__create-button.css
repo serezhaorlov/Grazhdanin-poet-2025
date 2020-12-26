@@ -18,6 +18,13 @@
 }
 
 .front-window__create-button:hover{
-    opacity: 0.6; /*можно до 0.8 по идее идти, будет ок*/
+    background-color: #E0B962;
+    color: white;
+
     cursor: pointer;
+}
+
+.front-window__create-button:active{
+    background-color: #CFA443;
+
 }

@@ -10,6 +10,9 @@
 }
 
 .popup-card__share-button:hover{
-    opacity: 0.6; /*можно до 0.8 по идее идти, будет ок*/
-    cursor: pointer;
+    background: #F0EBE8 url("../../../images/icons/share_icon_hovered.svg") no-repeat center center;
+}
+
+.popup-card__share-button:active{
+    background: #F0EBE8 url("../../../images/icons/share_icon.svg") no-repeat center center;
 }
