@@ -1,6 +1,6 @@
-import { ESC_KEY, formObj } from "../utils/constants.js"
+import { ESC_KEY } from "../utils/constants.js"
 
-export default class Popup {
+export default class Popup {//общий конструктор попапов
     constructor (popup) {
         this._popup = document.querySelector(popup);
         this._handleEscClose = this._handleEscClose.bind(this);

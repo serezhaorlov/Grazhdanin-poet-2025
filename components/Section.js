@@ -1,4 +1,4 @@
-export class Section {
+export class Section {// создание объекта секции для карточек
     constructor({items, renderer}, container){
         this._items = items,
         this._renderer = renderer,

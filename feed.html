@@ -74,7 +74,7 @@
             </section>
     </main>
 
-        <section class="popup ">
+        <section class="popup">
             <form class="form">
                 <h2 class="form__heading">Вход в личный кабинет</h2>
                 <input type="text" required="" minlength="2" maxlength="40" id="login" name="text" value="" placeholder="Логин" class="form__name form__name_login">
@@ -112,20 +112,21 @@
         </section>
     
         <section class="popup-initiative">
-            <form class="form">
+            <form class="form form__add-initiative">
                 <h2 class="form__heading">Создние инициативы</h2>
 
                 <input id="title" class="form__name form__name_login form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="40"  name="heading" value="" placeholder="Название инициативы" >
-                <span id="name-error" class="form__error" ></span>
+                <span id="title-error" class="form__error" ></span>
 
                 <div class="form__push-request">
-                    <input id="textrequest" class="form__request-input form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999"  name="theme" value="" placeholder="Введите тему запроса" >
+                    <input id="request" class="form__request-input form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999"  name="theme" value="" placeholder="Введите тему запроса" >
                     <button class="form__push-button" type="button"></button>
                 </div>
-                <span id="name-error" class="form__error" ></span>
+                <span id="request-error" class="form__error"></span>
+                
 
-                <input id="texted" class="form__name form__name_text form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999" name="text" value="" placeholder="Полученный текст...">
-                <span id="name-error" class="form__error"></span>
+                <input id="main-text" class="form__name form__name_text form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999" name="text" value="" placeholder="Полученный текст...">
+                <span id="main-text-error" class="form__error"></span>
                 <button type="submit" value="Сохранить" class="form__button form__button_reg">Создать инициативу</button>
 
                 <button type="button" class="form__close-button"></button>
@@ -142,11 +143,11 @@
         <section class="popup-edit">
             <form id="form" class="form form_edit" name="form" novalidate>
                 <h2 class="form__heading">Редактировать профиль</h2>
-                <input id="name" type="text" required="" minlength="2" maxlength="40"  name="name" value="" placeholder="Имя" class="form__name ">
+                <input id="name" type="text" required minlength="2" maxlength="40"  name="name" value="" placeholder="Имя" class="form__name form__input-field">
                 <span id="name-error" class="form__error"></span>
-                <input id="avatar" type="url" required="" minlength="2" maxlength="200"  name="about" value="" placeholder="Ссылка на картинку" class="form__name ">
-                <span id="about-error" class="form__error"></span>
-                <button type="submit" value="Сохранить" class="form__button ">Сохранить</button>
+                <input id="avatar" type="url" required minlength="2" maxlength="200"  name="avatar" value="" placeholder="Ссылка на картинку" class="form__name form__input-field">
+                <span id="avatar-error" class="form__error"></span>
+                <button type="submit" value="Сохранить" class="form__button">Сохранить</button>
                 <button type="button" class="form__close-button"></button>
             </form>
         </section>

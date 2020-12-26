@@ -1,4 +1,5 @@
 .form__heading {
+<<<<<<< HEAD
   color: black;
   font-family: Gilroy;
   font-style: normal;
@@ -6,4 +7,13 @@
   font-size: 24px;
   line-height: 29px;
   margin: 48px 0 0px 0;
+=======
+    color: black;
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 48px 0 30px 0;
+>>>>>>> 8fc5c0e9395ae8de61d5ab48246feb34863acd30
 }
