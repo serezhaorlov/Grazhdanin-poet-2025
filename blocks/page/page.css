@@ -1,6 +1,6 @@
 .page {
     min-width: 320px;
-    max-width: 1280px;
+    max-width: 1280px;  
     width: 100%;
     margin: 0 auto;
     font-family: Helvetica, Arial, sans-serif;
@@ -11,4 +11,11 @@
 
   *, *::after, *::before {
     box-sizing: inherit;
+}
+
+@font-face {
+    src: url("../../vendors/fonts/Gilroy-Extrabold.woff"),
+            url("../../vendors/fonts/Gilroy-Extrabold.woff2");
+
+    font-family: "Gilroy"
 }

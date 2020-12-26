@@ -1,6 +1,10 @@
 .front-window{
     display: flex;
-    flex-direction: column;
-    width: 1280px;
-    background-color: rgba(196, 196, 196, 1);
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2D4B4B;
+    background-repeat: no-repeat;
+    min-height: 535px;
 }

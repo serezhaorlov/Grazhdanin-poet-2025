@@ -1,10 +1,10 @@
 .promo__heading{
-    font-family: Roboto;
+    font-family: "Gilroy";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    
-    color: #000000;
-    margin: 32px 0 0 0;
+    z-index: 2;
+    color: #F0EBE8;
+    margin: 81px 0 40px 0;
 }

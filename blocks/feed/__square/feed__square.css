@@ -1,0 +1,7 @@
+.feed__square{
+    position: absolute;
+    top: 554px;
+    right: 0px;
+
+    z-index: -1;
+}

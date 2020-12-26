@@ -1,0 +1,5 @@
+.promo__container-inputs{
+    display: flex;
+    margin-top: 40px;
+    z-index: 2;
+}

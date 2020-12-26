@@ -1,3 +1,16 @@
 .card__bookmark_active {
-    
+    background-image: url(../../../../images/icons/bookmark_active.svg); /*отображение не то немного, но не страшно вроде*/
+    padding: 30px 20px;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    top: 17px;
+    right: 34px;
+}
+
+.card__bookmark_active:hover {
+    opacity: 0.6;
 }

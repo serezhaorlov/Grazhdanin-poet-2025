@@ -1,12 +1,14 @@
 .card__bookmark{
     background-image: url(../../../images/bookmark-initiative.svg); /*отображение не то немного, но не страшно вроде*/
-    padding: 17px;
+    padding: 30px 20px;
     background-position: center;
     cursor: pointer;
     border: none;
     background-repeat: no-repeat;
     background-color: transparent;
-    margin: -12px 45px 0 160px;
+    position: absolute;
+    top: 17px;
+    right: 34px;
 }
 
 .card__bookmark:hover {

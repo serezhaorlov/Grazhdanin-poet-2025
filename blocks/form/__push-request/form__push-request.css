@@ -1,0 +1,10 @@
+.form__push-request {
+    width: 320px;
+    min-height: 56px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+}

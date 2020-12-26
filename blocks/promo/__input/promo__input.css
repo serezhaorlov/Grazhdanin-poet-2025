@@ -1,0 +1,21 @@
+.promo__input{
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    line-height: 22px;  
+    color: #F0EBE8;
+    border-bottom: 2px solid #F0EBE8;
+    z-index: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+.promo__input::placeholder {
+    color:  #F0EBE8;
+}
+
+.promo__input:last-child{
+    margin-left: 24px;
+}

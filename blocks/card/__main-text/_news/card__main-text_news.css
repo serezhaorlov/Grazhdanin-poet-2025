@@ -1,4 +1,9 @@
 .card__main-text_news {
-    
-    width: 82%;
+    margin: 20px 0;
+    padding: 0;
+    width: 95%;
+    max-height: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
 }

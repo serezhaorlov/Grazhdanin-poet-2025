@@ -1,0 +1,15 @@
+.header__search-button{
+    padding: 20px;
+    background-image: url(../../../images/header-search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+    margin-right: 120px;
+
+}
+.header__search-button:hover{
+    background-image: url(../../../images/header-search-icon-hovered.svg);
+    transition: .2s, ease-in-out, linear;
+}

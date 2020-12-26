@@ -1,0 +1,11 @@
+.front-window__pic{
+    position: absolute;
+    z-index: 1;
+    max-width: 869px;
+    transform: rotate(-22deg);
+    transition: 0.3s 0.21s linear;
+}
+
+.front-window__pic:hover{
+    transform: rotate(0deg);
+}

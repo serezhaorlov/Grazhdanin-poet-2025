@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="./vendors/normalize.css">
         <link rel="stylesheet" href="./pages/index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <script src="./script.js" type="module" defer></script>
 
         <title>Hacaton</title>
@@ -14,137 +15,182 @@
     <body class="page">
         
         <header class="header">
-            <a href="#">
-                <img class="logo" src="./images/header-logo.svg" alt="Логотип">
-            </a>
+                <a href="#">
+                    <img href="index.html" class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+                </a>
+    
+                    <div class="header__link-list">
+                        <a class="header__link" href="feed.html">Лента инициатив</a>
+                        <a class="header__link" href="#">Новости</a>
+                        <a class="header__link" href="#">О проекте</a>
+                    </div>
+    
+    
+                    <div class="header__profile-container">
+                        <button class="header__search-button" type="button"></button>
+                        <input class="header__input-search" type="text" name="search" placeholder="Поиск по сайту">
+                        <a href="#"class="header__profile-title"></a>
+                        <button class="header__avatar"></button>
+                    </div>
 
-                <div class="header__link-list">
-                    <a class="header__link" href="feed.html">Лента инициатив</a>
-                    <a class="header__link" href="#">Новости</a>
-                    <a class="header__link" href="#">Мои инициативы</a>
-                </div>
-
-                <input class="header__input-search" type="text" name="search" placeholder="Поиск по сайту">
-
-                <div class="header__profile-container">
-                    <a href="#"class="header__profile-title">Пользователь</a>
-                    <img class="header__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
-                </div>
-            </div>
-        </header>   
+        </header> 
+        
         <main class="main">
+
             <section class="front-window">
                 <div class="front-window__text-container">
-                    <h1 class="front-window__title">Стать активным гражданином!</h1>
-                    <p class="front-window__subtitle">Агитационный слоган</p>
+                    <img src="./images/front-window-big-pic2.png" alt="" class="front-window__pic">
+                    <img src="./images/front-window-square-full.png" alt="" class="front-window__square rotation">
+                    <img src="./images/front-window-triangle.png" alt="" class="front-window__triangle">
+                    <img src="./images/arrow.svg" alt="" class="arrow">
+
                 </div>
+
                 <button class="front-window__create-button">Создать инициативу</button>
             </section>
+
             <section class="initiatives">
                 <h2 class="initiatives__popular">Популярные инициативы</h2>
-                
+                <img src="./images/initiatives-back-square.png" alt="" class="initiatives__back-square">
                 <section class="cards"></section>
 
-                <div class="initiatives__container">
-                    <p class="initiatives__see-all-cards">Смотреть все</p> <!--card__see-all-cards-->
-                    <button class="initiatives__see-all-button"></button> <!---->
-                </div>
-
             </section>
+
             <section class="news">
+                <div class="news__container">
+                    <img src="./images/news-arrow.svg" alt="" class="news__arrow">
+                    <button class="news__see-all-button"></button>
+                </div>
+                <img src="./images/news-triangle.png" alt="" class="news__triangle">
                 <h2 class="news__popular">Новости</h2>
                 <div class="card card_news"> <!--card-->
-                    <p class="card__heading">Название новости</p> <!---->
+                    <p class="card__heading">Не про войну...</p> <!---->
                     <p class="card__date">15.12.2020</p>
-                    <p class="card__main-text card__main-text_news">В результате работы нашей органзации в мире стало намного лучше...</p>
+                    <p class="card__main-text card__main-text_news">Не про бомбежку, не про израненных людей,Не про убитых - про живых!</p>
                 </div>
 
                 <div class="card card_news"> <!--card-->
-                    <p class="card__heading">Название новости</p> <!---->
+                    <p class="card__heading">Рождённых, радостных, счастливых</p> <!---->
                     <p class="card__date">15.12.2020</p>
-                    <p class="card__main-text card__main-text_news">В результате работы нашей органзации в мире стало намного лучше...</p>
+                    <p class="card__main-text card__main-text_news">Душою светлых и красивых - О них я сочиню свой стих.Я больше слышать не могу И видеть, как страдают дети</p>
                 </div>
 
                 <div class="card card_news"> <!--card-->
-                    <p class="card__heading">Название новости</p> <!---->
+                    <p class="card__heading">Которых жарким южным летом</p> <!---->
                     <p class="card__date">15.12.2020</p>
-                    <p class="card__main-text card__main-text_news">В результате работы нашей органзации в мире стало намного лучше...</p>
+                    <p class="card__main-text card__main-text_news">Сражают пули на бегу.К кому взывать, кого просить,Кричать истошно "Прекратите!"?...</p>
                 </div>
-                <div class="news__container">
-                    <p class="news__see-all-cards">Смотреть все</p>
+                <img src="./images/news-square.png" alt="" class="news__square">
+                <div class="news__container news__container_bot">
+                    <img src="./images/news-arrow.svg" alt="" class="news__arrow">
                     <button class="news__see-all-button"></button>
-                </div> 
+                </div>
+
             </section>
+
             <section class="promo">
                 <div class="promo__container">
-                    <h4 class="promo__heading">Стань активным гражданином!</h4>
-                    <p class="promo__subheading">Действуй прямо сейчас, начни участвовать в общественной жизни...</p>
-                    <button class="promo__button">Создать инициативу</button>
+                    <h4 class="promo__heading">Я к вам пишу...</h4>
+                    <p class="promo__subheading">
+                        Спасибо вам, мои корреспонденты -<br>
+                        Все те, кому ответить я не смог, -<br>
+                        Рабочие, узбеки и студенты -<br>
+                        Все, кто писал мне письма, - дай вам бог!<br>
+                    </p>
+                    <div class="promo__container-inputs">
+                        <input type="text" placeholder="E-mail" class="promo__input">
+                        <input type="text" placeholder="Телефон" class="promo__input">
+                    </div>
+                    <p class="promo__subheading promo__subheading_small">
+                        Оформляя подписку вы соглашаетесь с <a href="#" class="promo__link">условиями и политикой неразглашения</a>
+                    </p>
+                    <button class="promo__button">Подписаться</button>
                 </div>
-                <img src="" class="promo__img">
+                <img src="./images/promo-treangle.png" class="promo__triangle">
+                <img src="./images/promo-square-full.png" alt="" class="promo__square rotation">
             </section>
-        </main>
-        <section class="popup ">
-          <form class="form">
-            <h2 class="form__heading">Вход в личный кабинет</h2>
-            <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="Логин" class="form__name form__name_login">
-            <span id="text-error" class="form__error"></span>
-            <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
-            <span id="password-error" class="form__error"></span>
-            <a href="#" class="form__link">Забыли логин или пароль?</a>
-            <div class="form__container">
-                <input type="checkbox" required="" id="checkbox" name="checkbox" value="" placeholder="" class="form__checkbox"></input>
-                <label for="checkbox" class="form___label">Чужой компьютер</label>
-            </div>
-            <button type="submit" id="submit-button" value="Сохранить" class="form__button">Войти</button>
-            <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg form__button_unactive">Зарегистрироваться</button>
-            <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
-            <button id="button-close" type="button" class="form__close-button"></button>
-          </form>  
-        </section>
-        <section class="popup-reg">
-            <form class="form">
-              <h2 class="form__heading form__heading_reg">Регистрация</h2>
-              <input type="text" required="" minlength="2" maxlength="40" id="text" name="text" value="" placeholder="ФИО" class="form__name form__name_login">
-              <span id="text-error" class="form__error"></span>
-              <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
-              <span id="password-error" class="form__error"></span>
-              <input type="tel" required="" minlength="2" maxlength="40" id="tel" name="tel" value="" placeholder="Телефон" class="form__name form__name_tel">
-              <span id="tel-error" class="form__error"></span>
-              <p class="form__text">Нажимая кнопку “Зарегистрироваться” вы
-                соглашаетесь с <a href="#" class="form__link form__link_reg">Условиями использования</a> и <a href="#" class="form__link form__link_reg">Политикой конфиденциальности</a>
-              </p>
-              <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg">Зарегистрироваться</button>
-              <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
-              <button id="button-close" type="button" class="form__close-button"></button>
-            </form>  
-          </section>
-          <section class="popup-initiative ">
-            <form class="form">
-              <h2 class="form__heading">Создние инициативы</h2>
-              <input type="text" required="" minlength="2" maxlength="40" id="name" name="heading" value="" placeholder="Название инициативы" class="form__name form__name_login">
-              <span id="name-error" class="form__error" ></span>
-              <input type="text" required="" minlength="2" maxlength="999" id="textrequest" name="theme" value="" placeholder="Введите текст..." class="form__name form__name_text">
 
-              <!-- <select name="select" class="form__select" placeholder="Тема обращения">
-                <option value="value1" class="form__option">Тема обращения</option>
-                <option value="value2" class="form__option">Значение 2</option>
-                <option value="value3" class="form__option">Значение 3</option>
-              </select> -->
-              <input type="text" required="" minlength="2" maxlength="999" id="texted" name="text" value="" placeholder="Введите текст..." class="form__name form__name_text">
-              <span id="name-error" class="form__error"></span>
-              <button type="submit" id="submit-button" value="Сохранить" class="form__button form__button_reg">Создать инициативу</button>
-              <button type="submit" id="submit-button-active" value="Сохранить" class="form__button form__button_loading"></button>
-              <button id="button-close" type="button" class="form__close-button"></button>
+        </main>
+
+        <section class="popup ">
+            <form class="form">
+                <h2 class="form__heading">Вход в личный кабинет</h2>
+                <input type="text" required="" minlength="2" maxlength="40" id="login" name="text" value="" placeholder="Логин" class="form__name form__name_login">
+                <span id="text-error" class="form__error"></span>
+                <input type="password" required="" minlength="2" maxlength="200" id="password" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
+                <span id="password-error" class="form__error"></span>
+                <a href="#" class="form__link">Забыли логин или пароль?</a>
+                <div class="form__container">
+                    <input type="checkbox" required="" id="checkbox" name="checkbox" value="" placeholder="" class="form__checkbox"></input>
+                    <label for="checkbox" class="form___label">Чужой компьютер</label>
+                </div>
+                <button type="submit" value="Сохранить" class="form__button">Войти</button>
+                <button type="submit" value="Сохранить" class="form__button form__button_reg form__button_unactive">Зарегистрироваться</button>
+                <button type="submit" value="Сохранить" class="form__button form__button_loading"></button>
+                <button type="button" class="form__close-button"></button>
             </form>  
-          </section>
-          <section class="popup-profile">
+        </section>
+
+        <section class="popup-reg ">
+            <form class="form">
+                <h2 class="form__heading form__heading_reg ">Регистрация</h2>
+                <input type="text" required="" minlength="2" maxlength="40" id="login-reg" name="text" value="" placeholder="ФИО" class="form__name form__name_login">
+                <span id="text-error" class="form__error"></span>
+                <input type="password" required="" minlength="2" maxlength="200" id="password-reg" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
+                <span id="password-reg-error" class="form__error"></span>
+                <input type="tel" required="" minlength="2" maxlength="40" id="tel" name="tel" value="" placeholder="Телефон" class="form__name form__name_tel">
+                <span id="tel-error" class="form__error"></span>
+                <p class="form__text">Нажимая кнопку “Зарегистрироваться” вы
+                    соглашаетесь с <a href="#" class="form__link form__link_reg">Условиями использования</a> и <a href="#" class="form__link form__link_reg">Политикой конфиденциальности</a>
+                </p>
+                <button type="submit" value="Сохранить" class="form__button form__button_reg">Зарегистрироваться</button>
+                <button type="submit" value="Сохранить" class="form__button form__button_loading"></button>
+                <button type="button" class="form__close-button"></button>
+            </form>  
+        </section>
+    
+        <section class="popup-initiative">
+            <form class="form form__add-initiative">
+                <h2 class="form__heading">Создние инициативы</h2>
+
+                <input id="title" class="form__name form__name_login form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="40"  name="heading" value="" placeholder="Название инициативы" >
+                <span id="title-error" class="form__error" ></span>
+
+                <div class="form__push-request">
+                    <input id="request" class="form__request-input form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999"  name="theme" value="" placeholder="Введите тему запроса" >
+                    <button class="form__push-button" type="button"></button>
+                </div>
+                <span id="request-error" class="form__error"></span>
+                
+
+                <input id="main-text" class="form__name form__name_text form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999" name="text" value="" placeholder="Полученный текст...">
+                <span id="main-text-error" class="form__error"></span>
+                <button type="submit" value="Сохранить" class="form__button">Создать инициативу</button>
+
+                <button type="button" class="form__close-button"></button>
+            </form>  
+        </section>
+
+        <section class="popup-profile">
             <div class="popup-profile__container">
                 <img class="popup-profile__user-pic ">
                 <button class="popup-profile__button ">Вход</button>
             </div>
-          </section>
-          <section class="popup-profile-full"> <!--переделать-->
+        </section>
+
+        <section class="popup-edit">
+            <form id="form" class="form form_edit" name="form" novalidate>
+                <h2 class="form__heading">Редактировать профиль</h2>
+                <input id="name" type="text" required minlength="2" maxlength="40"  name="name" value="" placeholder="Имя" class="form__name form__input-field">
+                <span id="name-error" class="form__error"></span>
+                <input id="avatar" type="url" required minlength="2" maxlength="200"  name="avatar" value="" placeholder="Ссылка на картинку" class="form__name form__input-field">
+                <span id="avatar-error" class="form__error"></span>
+                <button type="submit" value="Сохранить" class="form__button">Сохранить</button>
+                <button type="button" class="form__close-button"></button>
+            </form>
+        </section>
+
+        <section class="popup-profile-full"> <!--переделать-->
             <div class="popup-profile-full__container">
                 <div class="popup-profile-full__user-container">
                     <a href="#" class="popup-profile-full__user-name">Петр Петров</a>
@@ -154,21 +200,21 @@
                     <a href="#" class="popup-profile-full__user-saved">Избранное</a>
                     <button type="button" class="popup-profile-full__user-settings"></button>
                 </div>
-
                 <button type="button" class="popup-profile-full__button">Выход</button>
             </div>
 
         </section>
+
         <section class="popup-subscribe">
             <div class="popup-subscribe__container">
             <h4 class="popup-subscribe__title">Подписка оформлена!</h4>
             <p class="popup-subscribe__subtitle">Вы успешно подписались на нашу рассылку, теперь вы будете получать новости о нашей компании и о самых популярных инициативах!</p>
-            <button id="button-close" type="button" class="popup-subscribe__close-button"></button>
+            <button type="button" class="popup-subscribe__close-button"></button>
         </section>
 
         <section class="popup popup-card">
             <div class="popup-card__content"> 
-                <button id="button-close" type="button" class="form__close-button"></button>
+                <button type="button" class="form__close-button"></button>
                     <div class="popup-card__header">
                         <h5 class="popup-card__heading">Название инициативы</h5> 
                         <p class="popup-card__sudheading">Инициатива №357894</p>
@@ -195,7 +241,7 @@
                             <button class="popup-card__show-replies-button"></button>
                     </div>
                     <form class="popup-card__replies-form">
-                        <input class="popup-card__reply-input" type="text">
+                        <input class="popup-card__reply-input" type="text" placeholder="Ваш комментарий...">
                         <button class="popup-card__reply-confirm" aria-label="confirm" type="submit" ></button>
                     </form>
                     </div>
@@ -203,29 +249,29 @@
         </section>
 
         <template class="template"> 
-            <div class="card"> <!--card-->
-                <div class="card__container"> <!--card__container-->
-                    <h5 class="card__heading"></h5> <!--card__heading-->
-                    <button alt="bookmark" class="card__bookmark"></button> <!--card__bookmark-->
+            <div class="card"> 
+                <div class="card__container"> 
+                    <h5 class="card__heading"></h5> 
+                    <button alt="bookmark" class="card__bookmark"></button> 
                 </div>
-                <div class="card__container"> <!--card__container-->
-                    <p class="card__date"></p> <!--card__date-->
-                    <p class="card__theme"></p> <!--card__theme-->
-                </div> <!--card__main-text-->
+                <div class="card__container"> 
+                    <p class="card__date"></p> 
+                    <p class="card__theme"></p> 
+                </div> 
                 <p class="card__main-text"></p>
-                <p class="card__author"></p> <!--card__author-->
+                <p class="card__author"></p> 
             </div>
         </template>
         
 
         <footer class="footer">
-            <div class="footer__column footer__column_content_logo">
-                <a href="#">
-                    <img class="logo" src="./images/header-logo.svg" alt="Логотип">
-                </a>
-                
+            <div class="footer__container">
+                <div class="footer__column footer__column_content_logo">
+                    <a href="#">
+                        <img class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+                    </a>
+                </div>
                 <div class="footer__social-links">
-                    <p class="footer__title">Наши соцсети</p>
                     <div class="footer__logo-links">
                         <a class="footer__logo-link footer__logo-link_vk" href="#"></a>
                         <a class="footer__logo-link footer__logo-link_instagram" href="#"></a>
@@ -234,25 +280,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="footer__column footer__column_content_about">
-                <h3 class="footer__heading">Об организации</h3>
-                <nav class="footer__nav">
-                        <a class="footer__link" href="#">Вакансии</a>
-                        <a class="footer__link" href="#">Служба поддержки</a>
-                        <a class="footer__link" href="#">Часто задаваемые вопросы</a>
-                        <a class="footer__link" href="#">Првила публикации</a>
-                </nav>
-            </div>
-
-            <div class="footer__column footer__column_content_subscribe">
-                <p class="footer__paragraph">
-                    Подпишитесь,на новости нашей организации, что бы всегда быть в курсе событий
-                </p>
-                <input class="footer__input-email" type="email" placeholder="Введите ваш E-mail">
-                <button class="footer__subscribe-button">Подписаться</button>
-
-            </div>
-
+            <h3 class="footer__copyright">© 2020 Гражданские инициативы</h3>
         </footer>
+
     </body>

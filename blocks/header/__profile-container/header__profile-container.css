@@ -1,14 +1,7 @@
 .header__profile-container {
-    max-width: 200px;
+    max-width: 320px;
     max-height: 32px;
-    
+    z-index: 5;
     display: flex;
     align-items: center;
-
-    cursor: pointer;
 }
-
-.header__profile-container:hover {
-    opacity: .6;
-    transition: .2s, ease-in-out, linear;
-}  

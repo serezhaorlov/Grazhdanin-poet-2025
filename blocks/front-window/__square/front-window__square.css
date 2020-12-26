@@ -1,0 +1,7 @@
+.front-window__square{
+    position: absolute;
+    width: 115%;
+    bottom: 57px;
+    left: 440px;
+    z-index: 0;
+}

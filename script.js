@@ -1,88 +1,96 @@
-import { UserInfo } from "./components/userInfo.js"
-import PopUpWithForm from './components/popUpWithForms.js';
+import { UserInfo } from "./components/UserInfo.js"
+import PopUpWithForm from './components/PopUpWithForms.js';
 import { PopupCardPreview } from './components/PopupCardPreview.js'
-import { initialCards, cardSection, elementSection, template, cardPopupElement, checkUrl } from './utils/constants.js';
+import PopupWithRequest from './components/PopupWithRequest.js'
 import { Section } from './components/Section.js';
 import { Card } from './components/Card.js';
-import { Api } from "./components/api.js";
+import { FeedElement } from './components/FeedElements.js'
+import { Api } from "./components/Api.js";
+import { FormValidator } from "./components/FormValidator.js"
+import {validationElement, 
+        initialCards, 
+        cardSection, 
+        elementSection, 
+        template, 
+        cardPopupElement, 
+        profileWholeBlock, 
+        createInitiativeButton, 
+        userAvatar, 
+        userName, 
+        popupEditProfileForm, 
+        popupAddInitiativeForm, 
+        checkUrl} from './utils/constants.js';
 
-const checkbox = document.getElementById("checkbox") 
-checkbox.disabled = true; //иначе требует крестик
 
-const profileWholeBlock = document.querySelector('.header__profile-container')
-const createInitiativeButton = document.querySelector('.front-window__create-button')
+const popupEditProfileValidator = new FormValidator(validationElement, popupEditProfileForm);//валидация редактирования профиля
+popupEditProfileValidator.enableValidation();
 
-const api = new Api({url:'http://buymebuyme.xyz?q='})
-api.getAnswer('вихрем')
-.then((res) => {
-    const a = res[Math.floor(Math.random()*5)];
-    console.log(a.fields.text[0])
+const popupAddInitiativeValidator = new FormValidator(validationElement, popupAddInitiativeForm);//валидация добавления инициатвы
+popupAddInitiativeValidator.enableValidation();
+
+const api = new Api({url:'https://buymebuyme.xyz?q='})//api сервера
+
+const cardPopup = new PopupCardPreview(cardPopupElement);//попап превью карточки
+
+const userInfo = new UserInfo (userAvatar, userName);//информация пользователя
+
+const popupEditProfile = new PopUpWithForm ('.popup-edit', (inputdata) => {userInfo.setUserInfo(inputdata)});//попап редактирования профиля 
+
+const createInitiativePopup = new PopupWithRequest('.popup-initiative', (data) => addCard(data));//попап создания инициативы
+
+createInitiativePopup.setRequest((value) => {//создания инициативы из ответа сервера
+        api.getAnswer(value)
+        .then ((res) => {
+            if(res.length === 0) {
+                popupAddInitiativeValidator.showServerError()// проверка на ошибку в ответе сервера
+            } else {
+                createInitiativePopup.setTextInInput(res);//данные с сервера передаются в инпут попапа создания инициативы
+            }
+        })
 })
 
-export const cardPopup = new PopupCardPreview(cardPopupElement);
-
-const usernfo = new UserInfo ({userName: '.header__profile-title'});
-
-const popupWithProfile = new PopUpWithForm ('.popup', {handleFormSubmit: (inputdata) => {
-    usernfo.setUserInfo(inputdata);
-    popupWithProfile.close();
-}});
-
-const popupInitiative = new PopUpWithForm ('.popup-initiative', {
-    handleFormSubmit: (inputdata) => {
-        api.getAnswer(inputdata.theme)
-            .then((res) => {
-                console.log(res)
-                const number = Object.keys(res).length - 1;//количество объектов вернувшееся с сервера
-                const poemObject = res[Math.floor(Math.random()*number)];//рандомный объект с стихотворением, не превыщающая количество объектов
-                const poemString = poemObject.fields.text[0]
-                return poemString;
-            })
-            .then ((res) => {
-                const popup = document.querySelector('.popup-initiative');
-                const textInput = popup.querySelector('#texted');
-                textInput.value = res;
-            })
-            
-        const modifier = 'card';
-        const card = new Card(inputdata, modifier, template, (inputdata) => {cardPopup.open(inputdata)});
-        const cardElement = card.getCard();
-        indexSection.addItem(cardElement);
-}})
-
-const openFullProfile = () => { //фукции потому что потом все равно делать если менять данные профиля через api
-    popupWithProfile.open()
+const openFullProfile = () => { //функция открытия попапа редактирования профиля, сброс ошибок валидации
+    popupEditProfileValidator.resetErrorMessage();
+    popupEditProfileValidator.toggleButtonState();
+    popupEditProfile.open();
 }
 
-const openCreateInitiative = () => {
-    popupInitiative.open()
+const openCreateInitiative = () => {//функция открытия попапа создания инициативы, сброс ошибок, получения заполненой информации о пользователя из разметки страницы
+    popupAddInitiativeValidator.resetErrorMessage();
+    // popupAddInitiativeValidator.toggleButtonState();
+    createInitiativePopup.open();
+    createInitiativePopup.getAuthorInfo(userInfo.getUserInfo());
 }
 
-const indexSection = new Section ({
+const addCard = (cardData) => {//создание карточки на главной странице
+    const card = new Card(cardData, template, (data) => cardPopup.open(data));
+    indexSection.addItem (card.getCard());
+} 
+
+const addFeedElements = (CardData) => {// создание элемента ленты на странице ленты
+    const element = new FeedElement (CardData, template, (data) => {cardPopup.open(data)});
+    const elementCard = element.getCard();
+    feedSection.addItem(elementCard);
+}
+
+const indexSection = new Section ({//секция для карточек на главной странице
     items: initialCards.reverse(),
-    modifier: 'card',
-    renderer: (item, modifier) => {
-        const card = new Card(item, modifier, template, (data) => {cardPopup.open(data)});
-        const cardElement = card.getCard();
-        indexSection.addItem(cardElement);
-    }, 
+    renderer: (item) => addCard(item), 
 }, cardSection)
 
-
-const feedSection = new Section ({
+const feedSection = new Section ({//секция для карточек на странице ленты
     items: initialCards.reverse(),
-    modifier: 'element',
-    renderer: (item, modifier) => {
-        const card = new Card(item, modifier, template, (data) => {cardPopup.open(data)});
-        const cardElement = card.getCard();
-        feedSection.addItem(cardElement);
-    }, 
+    renderer: (item) => addFeedElements(item)
 }, elementSection);
 
-checkUrl() ? indexSection.render() : feedSection.render()
+if(checkUrl()){//проверка url страницы, в зависимости от этого вызывается соответствующий рендер карточек, устанавливаются соответствующие слушателя(во избежания ошибок в консоли)
+    feedSection.render()
+} else {
+    indexSection.render()
+    createInitiativeButton.addEventListener('click', () => openCreateInitiative());//слушатель, который вызывает функцию открывающую попап создания инициативы
+} 
 
-profileWholeBlock.addEventListener('click', () => openFullProfile());
-createInitiativeButton.addEventListener('click', () => openCreateInitiative());
-popupWithProfile.setEventListeners();
-popupInitiative.setEventListeners();
-cardPopup.setEventListeners();
+profileWholeBlock.addEventListener('click', () => openFullProfile());//слушатель, который вызывает функцию открывающую попап редактирования профиля
+popupEditProfile.setEventListeners();//слушатель попапа
+createInitiativePopup.setEventListeners();//слушатель попапа
+cardPopup.setEventListeners();//слушатель попапа

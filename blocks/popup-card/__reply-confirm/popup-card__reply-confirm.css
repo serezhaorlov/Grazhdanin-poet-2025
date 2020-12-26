@@ -3,7 +3,7 @@
     height: 32px;
     padding: 0;
 
-    background: #fff url("../../../images/icons/arrow_confirm_icon.svg") no-repeat center center;
+    background: transparent url("../../../images/icons/arrow_confirm_icon.svg") no-repeat center center;
     background-size: 22px;
     border: none;
     cursor: pointer;

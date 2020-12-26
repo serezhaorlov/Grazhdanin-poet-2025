@@ -1,0 +1,7 @@
+.feed__triangle{
+    position: absolute;
+    top: 45px;
+    left: 114px;
+
+    z-index: -1;
+}
