@@ -10,6 +10,6 @@
 
 }
 .header__search-button:hover{
-    opacity: .6;
+    background-image: url(../../../images/header-search-icon-hovered.svg);
     transition: .2s, ease-in-out, linear;
 }

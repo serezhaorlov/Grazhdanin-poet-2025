@@ -5,11 +5,11 @@
     padding: 0;
     align-self: flex-end;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
     color: #E0B962;
     background-color: transparent;
     border: 1px solid #E0B962;
@@ -18,6 +18,13 @@
 }
 
 .front-window__create-button:hover{
-    opacity: 0.6; /*можно до 0.8 по идее идти, будет ок*/
+    background-color: #E0B962;
+    color: white;
+
     cursor: pointer;
+}
+
+.front-window__create-button:active{
+    background-color: #CFA443;
+
 }

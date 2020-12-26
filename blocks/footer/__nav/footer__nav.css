@@ -1,0 +1,6 @@
+.footer__nav {
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

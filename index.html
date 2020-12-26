@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="./vendors/normalize.css">
         <link rel="stylesheet" href="./pages/index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <script src="./script.js" type="module" defer></script>
 
         <title>Hacaton</title>
@@ -15,13 +16,13 @@
         
         <header class="header">
                 <a href="#">
-                    <img class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+                    <img href="index.html" class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
                 </a>
     
                     <div class="header__link-list">
                         <a class="header__link" href="feed.html">Лента инициатив</a>
                         <a class="header__link" href="#">Новости</a>
-                        <a class="header__link" href="#">Мои инициативы</a>
+                        <a class="header__link" href="#">О проекте</a>
                     </div>
     
     
@@ -29,7 +30,7 @@
                         <button class="header__search-button" type="button"></button>
                         <input class="header__input-search" type="text" name="search" placeholder="Поиск по сайту">
                         <a href="#"class="header__profile-title"></a>
-                        <img class="header__avatar" src="./images/icons/avatar_icon.svg" alt="Аватар">
+                        <button class="header__avatar"></button>
                     </div>
 
         </header> 
@@ -39,7 +40,7 @@
             <section class="front-window">
                 <div class="front-window__text-container">
                     <img src="./images/front-window-big-pic2.png" alt="" class="front-window__pic">
-                    <img src="./images/front-window-square.png" alt="" class="front-window__square">
+                    <img src="./images/front-window-square-full.png" alt="" class="front-window__square rotation">
                     <img src="./images/front-window-triangle.png" alt="" class="front-window__triangle">
                     <img src="./images/arrow.svg" alt="" class="arrow">
 
@@ -56,7 +57,10 @@
             </section>
 
             <section class="news">
-                <button class="news__see-all-button"></button>
+                <div class="news__container">
+                    <img src="./images/news-arrow.svg" alt="" class="news__arrow">
+                    <button class="news__see-all-button"></button>
+                </div>
                 <img src="./images/news-triangle.png" alt="" class="news__triangle">
                 <h2 class="news__popular">Новости</h2>
                 <div class="card card_news"> <!--card-->
@@ -77,7 +81,11 @@
                     <p class="card__main-text card__main-text_news">Сражают пули на бегу.К кому взывать, кого просить,Кричать истошно "Прекратите!"?...</p>
                 </div>
                 <img src="./images/news-square.png" alt="" class="news__square">
-                    <button class="news__see-all-button news__see-all-button_bot"></button>
+                <div class="news__container news__container_bot">
+                    <img src="./images/news-arrow.svg" alt="" class="news__arrow">
+                    <button class="news__see-all-button"></button>
+                </div>
+
             </section>
 
             <section class="promo">
@@ -99,7 +107,7 @@
                     <button class="promo__button">Подписаться</button>
                 </div>
                 <img src="./images/promo-treangle.png" class="promo__triangle">
-                <img src="./images/promo-square.png" alt="" class="promo__square">
+                <img src="./images/promo-square-full.png" alt="" class="promo__square rotation">
             </section>
 
         </main>
@@ -123,9 +131,9 @@
             </form>  
         </section>
 
-        <section class="popup-reg">
+        <section class="popup-reg ">
             <form class="form">
-                <h2 class="form__heading form__heading_reg">Регистрация</h2>
+                <h2 class="form__heading form__heading_reg ">Регистрация</h2>
                 <input type="text" required="" minlength="2" maxlength="40" id="login-reg" name="text" value="" placeholder="ФИО" class="form__name form__name_login">
                 <span id="text-error" class="form__error"></span>
                 <input type="password" required="" minlength="2" maxlength="200" id="password-reg" name="password" value="" placeholder="Пароль" class="form__name form__name_password">
@@ -157,7 +165,7 @@
 
                 <input id="main-text" class="form__name form__name_text form__input-field" type="text" required autocomplete="off" minlength="2" maxlength="999" name="text" value="" placeholder="Полученный текст...">
                 <span id="main-text-error" class="form__error"></span>
-                <button type="submit" value="Сохранить" class="form__button form__button_reg">Создать инициативу</button>
+                <button type="submit" value="Сохранить" class="form__button">Создать инициативу</button>
 
                 <button type="button" class="form__close-button"></button>
             </form>  

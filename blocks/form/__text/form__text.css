@@ -1,10 +1,12 @@
 .form__text{
+    width: 44%;
+    margin: 59px -14px 0 0;
+
+    color: #7D7D7D;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 19px;
-    color: #7D7D7D;
-    width: 44%;
-    margin: 59px -14px 0 0;
+    font-size: 12px;
+    line-height: 14px;
 }

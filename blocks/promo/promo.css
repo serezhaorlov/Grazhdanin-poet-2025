@@ -3,5 +3,5 @@
     background-color: #2D4B4B;
     min-height: 578px;
     display: flex;
-    
+    overflow: hidden;
 }

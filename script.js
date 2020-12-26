@@ -57,7 +57,7 @@ const openFullProfile = () => { //функция открытия попапа �
 
 const openCreateInitiative = () => {//функция открытия попапа создания инициативы, сброс ошибок, получения заполненой информации о пользователя из разметки страницы
     popupAddInitiativeValidator.resetErrorMessage();
-    popupAddInitiativeValidator.toggleButtonState();
+    // popupAddInitiativeValidator.toggleButtonState();
     createInitiativePopup.open();
     createInitiativePopup.getAuthorInfo(userInfo.getUserInfo());
 }
