@@ -23,17 +23,23 @@ _________________________________
 Team-50
 
 UX/UI designers:
+
 Сергей Белоглазов (https://www.behance.net/rabartling45b9)
+
 Татьяна Рыженкова (https://www.behance.net/ryzhenkowa9bd2)
 
 Frontend developers:
+
 Сережа Орлов (https://github.com/serezhaorlov) 
+
 Роман Лесной (https://github.com/romanlesnoy)
 
 ### Figma:
+
 Работа доступна по [ссылке] (https://www.figma.com/file/pQvX1PoCiQZsW7WIWiIjJs/Team_50?node-id=0%3A1)
 
 ### Gh-pages:
+
 Работа доступна по [ссылке] (https://serezhaorlov.github.io/Grazhdanin-poet-2025/index.html)
 
 
