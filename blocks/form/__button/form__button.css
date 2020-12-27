@@ -1,34 +1,31 @@
 .form__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-  min-height: 50px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  background-color: #CC493D;
-  color: white;
-
-  border: none;
-  border-radius: 10px;
-  
-  margin: 32px 0 0;
-
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-
+    width: 320px;
+    min-height: 50px;
+    margin: 2px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #CC493D;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
 }
-
 
 .form__button:hover {
     background-color: #A92C21;
+    color: white;
     cursor: pointer;
 }
+
 .form__button:active{
     background-color: #CC493D;
 }

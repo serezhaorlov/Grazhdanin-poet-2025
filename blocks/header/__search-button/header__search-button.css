@@ -1,22 +1,21 @@
 .header__search-button{
-    padding: 20px;
+    padding-right: 20px;
     background-image: url(../../../images/header-search-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     border: none;
+    border-bottom: 2px solid #f0ebe8;
     z-index: 5;
-    position: absolute;
-    top: 28px;
-    right: 377px;
     outline: none;
-
 }
+
 .header__search-button:hover{
-    background-image: url(../../../images/header-search-icon-hovered.svg);
-    transition: .2s, ease-in-out, linear;
+
 }
 
 .header__search-button:active{
-    transform: scale(1.1);
+    opacity: 1;
+    background-image: url(../../../images/header-search-icon-hovered.svg);
+    transition: .2s, ease-in-out, linear;
 }

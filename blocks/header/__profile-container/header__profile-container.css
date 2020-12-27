@@ -1,7 +1,8 @@
 .header__profile-container {
-    max-width: 320px;
+    min-width: 320px;
     max-height: 32px;
     z-index: 5;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
