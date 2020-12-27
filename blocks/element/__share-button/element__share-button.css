@@ -7,6 +7,8 @@
     background-size: 22px;
     border: none;
     cursor: pointer;
+    outline: none;
+
 }
 
 .element__share-button:hover{

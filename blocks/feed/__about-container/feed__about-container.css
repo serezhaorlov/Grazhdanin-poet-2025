@@ -1,0 +1,6 @@
+.feed__about-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 51%;
+    margin: 100px 0 100px 100px;
+}

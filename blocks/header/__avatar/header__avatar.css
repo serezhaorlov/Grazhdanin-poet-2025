@@ -1,22 +1,16 @@
 .header__avatar {
-    padding: 14px;
+    width: 32px;
     z-index: 5;
     height: 32px;
     border-radius: 50px;
-    object-fit: cover;
-    background: transparent url("../../../images/icons/avatar_icon.svg") no-repeat center center;
-    border: none;
     cursor: pointer;
 }
 
 .header__avatar:hover{
-    background: transparent url("../../../images/icons/avatar_icon_hovered.svg") no-repeat center center;
-
-    transition: .2s, ease-in-out, linear;
+    opacity: 0.6;
+    transition: .1s, ease-in-out, linear;
 }
 
 .header__avatar:active{
-    background: transparent url("../../../images/icons/avatar_icon.svg") no-repeat center center;
-
-    transition: .2s, ease-in-out, linear;
+    transform: scale(1.1);
 }

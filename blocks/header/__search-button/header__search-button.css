@@ -6,10 +6,17 @@
     background-color: transparent;
     border: none;
     z-index: 5;
-    margin-right: 120px;
+    position: absolute;
+    top: 30px;
+    right: 377px;
+    outline: none;
 
 }
 .header__search-button:hover{
     background-image: url(../../../images/header-search-icon-hovered.svg);
     transition: .2s, ease-in-out, linear;
+}
+
+.header__search-button:active{
+    transform: scale(1.1);
 }

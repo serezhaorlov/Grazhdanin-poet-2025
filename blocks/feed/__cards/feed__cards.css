@@ -1,0 +1,5 @@
+.feed__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,556px);
+    gap: 68px;
+}

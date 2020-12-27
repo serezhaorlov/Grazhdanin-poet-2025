@@ -11,10 +11,16 @@
     z-index: 5;
     position: absolute;
     right: 16px;
+    outline: none;
+
 }
 
 .news__see-all-button:hover{
     transform: scale(1.2);
     transition: all 0.5s ease-out;
     opacity: 0.8;
+}
+
+.news__see-all-button:active{
+    transform: scale(1.5);
 }

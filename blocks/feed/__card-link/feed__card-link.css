@@ -1,0 +1,14 @@
+.feed__card-link{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    color: #000;
+}
+
+.feed__card-link:hover{
+    opacity: 0.6;
+}

@@ -15,6 +15,7 @@
     border: 1px solid #E0B962;
     border-radius: 100px;
     z-index: 5;
+    outline: none;
 }
 
 .front-window__create-button:hover{

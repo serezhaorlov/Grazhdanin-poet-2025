@@ -14,6 +14,8 @@
     border: 1px solid #E0B962;
     border-radius: 100px;
     z-index: 2;
+    outline: none;
+
 }
 
 .promo__button:hover{

@@ -9,6 +9,8 @@
     position: absolute;
     top: 17px;
     right: 34px;
+    outline: none;
+
 }
 
 .card__bookmark:hover {

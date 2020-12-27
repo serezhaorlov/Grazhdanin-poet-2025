@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./vendors/normalize.css">
+        <link rel="stylesheet" href="./pages/about.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="./script.js" type="module" defer></script>
+        <script src="./components/popup.js" type="module" defer></script>
+        <script src="./components/userInfo.js" type="module" defer></script>
+        <script src="./components/formValidator.js" type="module" defer></script>
+        <script src="./utils/constants.js" type="module" defer></script>
+        <title>Hacaton</title>
+    </head>
+    <body class="page">
+        
+        <header class="header">
+            <a href="index.html">
+                <img class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+            </a>
+
+                <div class="header__link-list">
+                    <a class="header__link" href="feed.html">Лента инициатив</a>
+                    <a class="header__link" href="#">Новости</a>
+                    <a class="header__link" href="#">О проекте</a>
+                </div>
+
+
+                <div class="header__profile-container">
+                    <input class="header__input-search" type="text" name="search" placeholder="">
+                    <button class="header__search-button" type="button"></button>
+                    <a href="#"class="header__profile-title"></a>
+                    <img src="./images/icons/avatar_icon.svg" class="header__avatar"></img>
+                </div>
+
+    </header> 
+
+    <main class="main main_feed">
+
+
+            <section class="feed feed_about"> 
+                <div class="feed__about-container">
+                    <h1 class="feed__title">О проекте</h1>
+                    <p class="feed__text">Данный проект создан в рамках Хакатона “Гражданин-поэт 2025”,
+                          проводившегося среди студентов Яндекс Практикума.
+                            Задачей участников было создать прототип приложения для создания гражданских инициатив.
+                             На дворе 2025 год, в стране цензура. Для защиты общественной нравственности к рассмотрению принимаются
+                              только обращения, написанные цитатами поэтов-классиков. 
+                              В общем, публично можно общаться только цитатами поэтов-классиков. 
+                              Например, оставить предложение перенести парковку или заменить лампочку в подъезде
+                               — обо всём этом можно сообщить только в форме стихов.</p>
+                </div>
+                <div class="feed__us-container">
+                    <h2 class="feed__title ">В этом проекте принимали участие:</h2>
+                    <div class="feed__jobs">
+                        <h4 class="feed__title feed__title_prof">UX/UI designers</h4>
+                        <h4 class="feed__title feed__title_prof">Frontend developers</h4>
+                    </div>
+
+                    <div class="feed__cards">
+                        <div class="feed__card">
+                            <img src="./images/authors/sbeloglazov.png" alt="" class="feed__card-image">
+                            <div class="feed__card-content">
+                                <p class="feed__card-name">Сергей Белоглазов</p>
+                                <a href="https://www.behance.net/rabartling45b9" class="feed__card-link">behance.net/rabartling45b9</a>
+                                <a href="https://t.me/Rabartling" class="feed__card-link">t.me/Rabartling</a>
+                                <a href="https://rabartling@gmail.com" class="feed__card-link">rabartling@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="feed__card">
+                            <img src="./images/authors/sorlov.png" alt="" class="feed__card-image">
+                            <div class="feed__card-content">
+                                <p class="feed__card-name">Сережа Орлов</p>
+                                <a href="https://github.com/serezhaorlov" class="feed__card-link">github.com/serezhaorlov</a>
+                                <a href="https://t.me/Serezha_Orlov" class="feed__card-link">t.me/Serezha_Orlov</a>
+                                <a href="https://serejaorlov.osnovnoy@gmail.com" class="feed__card-link">serejaorlov.osnovnoy@gmail.com</a>
+
+                            </div>
+                        </div>
+                        <div class="feed__card">
+                            <img src="./images/authors/tryzhenkowa.png" alt="" class="feed__card-image">
+                            <div class="feed__card-content">
+                                <p class="feed__card-name">Татьяна Рыженкова</p>
+                                <a href="https://www.behance.net/ryzhenkowa9bd2" class="feed__card-link">behance.net/ryzhenkowa9bd2</a>
+                                <a href="https://t.me/TanyaRyzhekova" class="feed__card-link">t.me/TanyaRyzhekova</a>
+                                <a href="ryzhenkowa.tatyana@yandex.ru" class="feed__card-link">ryzhenkowa.tatyana@yandex.ru</a>
+                            </div>
+                        </div>
+                        <div class="feed__card">
+                            <img src="./images/authors/rlesnoy.png" alt="" class="feed__card-image">
+                            <div class="feed__card-content">
+                                <p class="feed__card-name">Роман Лесной</p>
+                                <a href="https://github.com/romanlesnoy" class="feed__card-link">github.com/romanlesnoy</a>
+                                <a href="https://t.me/romanlesnoy" class="feed__card-link">t.me/romanlesnoy</a>
+                                <a href="#" class="feed__card-link">email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./images/news-square.png" alt="" class="feed__square">
+                <img src="./images/triange-feed.png" alt="" class="feed__triangle">
+                <img src="./images/feed-triangle-bot.png" alt="" class="feed__triangle_bot">
+            </section>
+    </main>
+
+        <section class="popup-edit">
+            <form id="form" class="form form_edit" name="form" novalidate>
+                <h2 class="form__heading">Редактировать профиль</h2>
+                <input id="name" type="text" required minlength="2" maxlength="40"  name="name" value="" placeholder="Имя" class="form__name form__input-field">
+                <span id="name-error" class="form__error"></span>
+                <input id="avatar" type="url" required minlength="2" maxlength="200"  name="avatar" value="" placeholder="Ссылка на картинку" class="form__name form__input-field">
+                <span id="avatar-error" class="form__error"></span>
+                <button type="submit" value="Сохранить" class="form__button">Сохранить</button>
+                <button type="button" class="form__close-button"></button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__column footer__column_content_logo">
+                    <a href="index.html">
+                        <img class="logo" src="./images/header-logo-gi.svg" alt="Логотип">
+                    </a>
+                </div>
+                <div class="footer__social-links">
+                    <div class="footer__logo-links">
+                        <a class="footer__logo-link footer__logo-link_vk" href="#"></a>
+                        <a class="footer__logo-link footer__logo-link_instagram" href="#"></a>
+                        <a class="footer__logo-link footer__logo-link_twitter" href="#"></a>
+                        <a class="footer__logo-link footer__logo-link_telegram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="footer__copyright">© 2020 Гражданские инициативы</h3>
+        </footer>
+    </body>
