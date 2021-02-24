@@ -145,33 +145,34 @@
 
 @import url("../blocks/form/__error/error.css");
 
-
-@import url("../blocks/form/__close-button/form__close-button.css");
-@import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__link/form__link.css");
-@import url("../blocks/form/__button/_unactive/form__button_unactive.css");
 @import url("../blocks/form/__container/form__container.css");
 @import url("../blocks/form/__checkbox/form__checkbox.css");
 @import url("../blocks/form/___label/form___label.css");
 @import url("../blocks/form/__text/form__text.css");
 @import url("../blocks/form/__link/_reg/form__link_reg.css");
-@import url("../blocks/form/__button/_reg/form__button_reg.css");
 @import url("../blocks/form/__button/_loading/form__button_loading.css");
 @import url("../blocks/form/__button/_loading/_is-active/form__button_loading_is-active.css");  /*исправить в mesto*/
-@import url("../blocks/form/__heading/form__heading.css");
 @import url("../blocks/form/__heading/_reg/form__heading_reg.css");
-@import url("../blocks/form/__name/form__name.css");
-@import url("../blocks/form/__push-request/form__push-request.css");
-@import url("../blocks/form/__name/_text/form__name_text.css");
 @import url("../blocks/form/__name/_error/form__name_error.css");
 @import url("../blocks/form/__select/form__select.css");
 @import url("../blocks/form/__option/form__option.css");
-@import url("../blocks/form/form.css");
 @import url("../blocks/popup/_is-opened/popup_is-opened.css");
 @import url("../blocks/form/__name/_error/form__name_error.css");
+@import url("../blocks/form/_edit/form_edit.css");
+
+@import url("../blocks/form/form.css");
+@import url("../blocks/form/__heading/form__heading.css");
+@import url("../blocks/form/__name/form__name.css");
+@import url("../blocks/form/__push-request/form__push-request.css");
 @import url("../blocks/form/__request-input/form__request-input.css");
 @import url("../blocks/form/__push-button/form__push-button.css");
-@import url("../blocks/form/__push-button/form__push-button.css");
-@import url("../blocks/form/_edit/form_edit.css");
+@import url("../blocks/form/__button/form__button.css");
+@import url("../blocks/form/__name/_text/form__name_text.css");
+
+@import url("../blocks/form/__button/_unactive/form__button_unactive.css");
+@import url("../blocks/form/__close-button/form__close-button.css");
+@import url("../blocks/form/__button/_reg/form__button_reg.css");
+
 
 @import url("../blocks/rotation/rotation.css");

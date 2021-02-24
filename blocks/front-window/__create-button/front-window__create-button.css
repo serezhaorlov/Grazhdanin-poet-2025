@@ -27,5 +27,8 @@
 
 .front-window__create-button:active{
     background-color: #CFA443;
+}
 
+.front-window__create-button:visited{
+    background-color: #CFA443;
 }
